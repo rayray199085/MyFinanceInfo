@@ -7,9 +7,12 @@
 //
 
 import UIKit
+import SVProgressHUD
 
 class SCStockViewController: UIViewController {
     private let categoryView = SCStockCategoryView.categoryView()
+    private let displayView = SCStockDisplayView.displayView()
+    private let listViewModel = SCStockListViewModel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,11 +33,22 @@ class SCStockViewController: UIViewController {
         }
     }
     func loadData(index: Int){
-        print(index)
+        if index == listViewModel.previewIndex{
+            return 
+        }
+        SVProgressHUD.show()
+        listViewModel.loadStockData(index: index) { [weak self](isSuccess) in
+            self?.displayView.tableView.reloadData()
+            self?.displayView.tableView.scroll(to: UITableView.scrollsTo.top, animated: true)
+            SVProgressHUD.dismiss()
+        }
     }
 }
 private extension SCStockViewController{
     func setupUI(){
+        view.addSubview(displayView)
+        displayView.listViewModel = listViewModel
+        
         navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .search, target: self, action: #selector(clickSearchButton))
         view.addSubview(categoryView)
         categoryView.frame.origin.x = -UIScreen.screenWidth()

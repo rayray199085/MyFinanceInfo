@@ -18,6 +18,10 @@ extension UITableView {
         })
     }
     
+    func hideSeparatorWhenEmpty(count: Int){
+        separatorStyle = count > 0 ? UITableViewCell.SeparatorStyle.singleLine : .none
+    }
+    
     func cancelAllSelections(){
         for section in 0..<numberOfSections{
             for row in 0..<numberOfRows(inSection: section){

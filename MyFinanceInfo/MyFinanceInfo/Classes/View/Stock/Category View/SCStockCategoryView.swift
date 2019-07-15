@@ -14,7 +14,8 @@ private let reuseIdentifier = "category_cell"
 class SCStockCategoryView: UIView {
     weak var delegate: SCStockCategoryViewDelegate?
     
-    private var selectedIndex: Int = 0
+    private var selectedIndex: Int = -1
+    
     private let headers = ["Info","Data"]
     private let titles = ["Actives","Gainers","Losers","Currencies","Cryptocurrency","Sector Performance"]
     class func categoryView()->SCStockCategoryView{

@@ -13,4 +13,8 @@ struct InfoCommon{
     static let barColor = UIColor(displayP3Red: 192.0 / 250, green: 192.0 / 250, blue: 192.0 / 250, alpha: 1.0)
     static let tabbarNormalColor = UIColor(displayP3Red: 128.0 / 250, green: 128.0 / 250, blue: 128.0 / 250, alpha: 1.0)
     static let navHighlightedColor = UIColor(displayP3Red: 68.0 / 250, green: 68.0 / 250, blue: 68.0 / 250, alpha: 1.0)
+    static let increasingPriceColor = UIColor(displayP3Red: 83.0 / 250, green: 164.0 / 250, blue: 81.0 / 250, alpha: 1.0)
+    static let decreasingPriceColor = UIColor(displayP3Red: 189.0 / 250, green: 63.0 / 250, blue: 68.0 / 250, alpha: 1.0)
+    
+    static let baseUrl = "https://financialmodelingprep.com/api/v3"
 }

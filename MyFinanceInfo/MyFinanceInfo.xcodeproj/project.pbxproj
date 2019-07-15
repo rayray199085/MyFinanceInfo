@@ -7,6 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D59A0F922DBF1D800BF62EF /* SCStockListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D59A0F822DBF1D800BF62EF /* SCStockListItem.swift */; };
+		0D59A0FB22DBF26300BF62EF /* SCStockMostActive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D59A0FA22DBF26300BF62EF /* SCStockMostActive.swift */; };
+		0D59A0FD22DBF2B400BF62EF /* SCStockMostGainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D59A0FC22DBF2B400BF62EF /* SCStockMostGainer.swift */; };
+		0D59A0FF22DBF2CE00BF62EF /* SCStockMostLoser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D59A0FE22DBF2CE00BF62EF /* SCStockMostLoser.swift */; };
+		0D59A10222DBF37100BF62EF /* SCStockListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D59A10122DBF37100BF62EF /* SCStockListViewModel.swift */; };
+		0D59A10422DBF5CE00BF62EF /* SCNetworkManager+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D59A10322DBF5CE00BF62EF /* SCNetworkManager+extension.swift */; };
+		0D59A10622DC007400BF62EF /* SCStockDisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D59A10522DC007400BF62EF /* SCStockDisplayView.swift */; };
+		0D59A10822DC00D200BF62EF /* SCStockDisplayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D59A10722DC00D200BF62EF /* SCStockDisplayView.xib */; };
+		0D59A10A22DC013500BF62EF /* SCStockInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D59A10922DC013500BF62EF /* SCStockInfoCell.xib */; };
+		0D59A10C22DC017500BF62EF /* SCStockInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D59A10B22DC017500BF62EF /* SCStockInfoCell.swift */; };
+		0D59A10E22DC0C5900BF62EF /* SCStockInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D59A10D22DC0C5900BF62EF /* SCStockInfoViewModel.swift */; };
+		0D59A11022DC3B4B00BF62EF /* SCStockForexList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D59A10F22DC3B4B00BF62EF /* SCStockForexList.swift */; };
+		0D59A11222DC3B6B00BF62EF /* SCStockForexListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D59A11122DC3B6B00BF62EF /* SCStockForexListItem.swift */; };
+		0D59A11422DC3BFC00BF62EF /* SCStockCryptocurrenciesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D59A11322DC3BFC00BF62EF /* SCStockCryptocurrenciesList.swift */; };
+		0D59A11622DC3C2B00BF62EF /* SCStockCryptocurrenciesListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D59A11522DC3C2B00BF62EF /* SCStockCryptocurrenciesListItem.swift */; };
+		0D59A11822DC3CDB00BF62EF /* SCStockSectorPerformance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D59A11722DC3CDB00BF62EF /* SCStockSectorPerformance.swift */; };
+		0D59A11A22DC3CFE00BF62EF /* SCStockSectorPerformanceItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D59A11922DC3CFE00BF62EF /* SCStockSectorPerformanceItem.swift */; };
+		0D59A11C22DC3FFB00BF62EF /* SCStockForexViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D59A11B22DC3FFB00BF62EF /* SCStockForexViewModel.swift */; };
+		0D59A11E22DC403600BF62EF /* SCStockCryptocurrenciesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D59A11D22DC403600BF62EF /* SCStockCryptocurrenciesViewModel.swift */; };
+		0D59A12222DC423600BF62EF /* SCStockForexCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D59A12122DC423600BF62EF /* SCStockForexCell.swift */; };
+		0D59A12422DC424400BF62EF /* SCStockForexCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D59A12322DC424400BF62EF /* SCStockForexCell.xib */; };
+		0D59A12622DC427700BF62EF /* SCStockCryptocurrenciesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D59A12522DC427700BF62EF /* SCStockCryptocurrenciesCell.swift */; };
+		0D59A12822DC428B00BF62EF /* SCStockCryptocurrenciesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D59A12722DC428B00BF62EF /* SCStockCryptocurrenciesCell.xib */; };
+		0D59A12A22DC42A700BF62EF /* SCStockSectorPerformanceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D59A12922DC42A700BF62EF /* SCStockSectorPerformanceCell.swift */; };
+		0D59A12C22DC42B800BF62EF /* SCStockSectorPerformanceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D59A12B22DC42B800BF62EF /* SCStockSectorPerformanceCell.xib */; };
+		0D59A12E22DC528A00BF62EF /* Double+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D59A12D22DC528A00BF62EF /* Double+extension.swift */; };
 		0D6962B522DAB8FE00244D8A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6962B422DAB8FE00244D8A /* AppDelegate.swift */; };
 		0D6962BC22DAB8FF00244D8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D6962BB22DAB8FF00244D8A /* Assets.xcassets */; };
 		0D6962BF22DAB8FF00244D8A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D6962BD22DAB8FF00244D8A /* LaunchScreen.storyboard */; };
@@ -75,6 +101,32 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D59A0F822DBF1D800BF62EF /* SCStockListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCStockListItem.swift; sourceTree = "<group>"; };
+		0D59A0FA22DBF26300BF62EF /* SCStockMostActive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCStockMostActive.swift; sourceTree = "<group>"; };
+		0D59A0FC22DBF2B400BF62EF /* SCStockMostGainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCStockMostGainer.swift; sourceTree = "<group>"; };
+		0D59A0FE22DBF2CE00BF62EF /* SCStockMostLoser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCStockMostLoser.swift; sourceTree = "<group>"; };
+		0D59A10122DBF37100BF62EF /* SCStockListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCStockListViewModel.swift; sourceTree = "<group>"; };
+		0D59A10322DBF5CE00BF62EF /* SCNetworkManager+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SCNetworkManager+extension.swift"; sourceTree = "<group>"; };
+		0D59A10522DC007400BF62EF /* SCStockDisplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCStockDisplayView.swift; sourceTree = "<group>"; };
+		0D59A10722DC00D200BF62EF /* SCStockDisplayView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SCStockDisplayView.xib; sourceTree = "<group>"; };
+		0D59A10922DC013500BF62EF /* SCStockInfoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SCStockInfoCell.xib; sourceTree = "<group>"; };
+		0D59A10B22DC017500BF62EF /* SCStockInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCStockInfoCell.swift; sourceTree = "<group>"; };
+		0D59A10D22DC0C5900BF62EF /* SCStockInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCStockInfoViewModel.swift; sourceTree = "<group>"; };
+		0D59A10F22DC3B4B00BF62EF /* SCStockForexList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCStockForexList.swift; sourceTree = "<group>"; };
+		0D59A11122DC3B6B00BF62EF /* SCStockForexListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCStockForexListItem.swift; sourceTree = "<group>"; };
+		0D59A11322DC3BFC00BF62EF /* SCStockCryptocurrenciesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCStockCryptocurrenciesList.swift; sourceTree = "<group>"; };
+		0D59A11522DC3C2B00BF62EF /* SCStockCryptocurrenciesListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCStockCryptocurrenciesListItem.swift; sourceTree = "<group>"; };
+		0D59A11722DC3CDB00BF62EF /* SCStockSectorPerformance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCStockSectorPerformance.swift; sourceTree = "<group>"; };
+		0D59A11922DC3CFE00BF62EF /* SCStockSectorPerformanceItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCStockSectorPerformanceItem.swift; sourceTree = "<group>"; };
+		0D59A11B22DC3FFB00BF62EF /* SCStockForexViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCStockForexViewModel.swift; sourceTree = "<group>"; };
+		0D59A11D22DC403600BF62EF /* SCStockCryptocurrenciesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCStockCryptocurrenciesViewModel.swift; sourceTree = "<group>"; };
+		0D59A12122DC423600BF62EF /* SCStockForexCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCStockForexCell.swift; sourceTree = "<group>"; };
+		0D59A12322DC424400BF62EF /* SCStockForexCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SCStockForexCell.xib; sourceTree = "<group>"; };
+		0D59A12522DC427700BF62EF /* SCStockCryptocurrenciesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCStockCryptocurrenciesCell.swift; sourceTree = "<group>"; };
+		0D59A12722DC428B00BF62EF /* SCStockCryptocurrenciesCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SCStockCryptocurrenciesCell.xib; sourceTree = "<group>"; };
+		0D59A12922DC42A700BF62EF /* SCStockSectorPerformanceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCStockSectorPerformanceCell.swift; sourceTree = "<group>"; };
+		0D59A12B22DC42B800BF62EF /* SCStockSectorPerformanceCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SCStockSectorPerformanceCell.xib; sourceTree = "<group>"; };
+		0D59A12D22DC528A00BF62EF /* Double+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+extension.swift"; sourceTree = "<group>"; };
 		0D6962B122DAB8FE00244D8A /* MyFinanceInfo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFinanceInfo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D6962B422DAB8FE00244D8A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0D6962BB22DAB8FF00244D8A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -180,6 +232,34 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		0D59A0F722DBF18D00BF62EF /* Stock */ = {
+			isa = PBXGroup;
+			children = (
+				0D59A0F822DBF1D800BF62EF /* SCStockListItem.swift */,
+				0D59A0FA22DBF26300BF62EF /* SCStockMostActive.swift */,
+				0D59A0FC22DBF2B400BF62EF /* SCStockMostGainer.swift */,
+				0D59A0FE22DBF2CE00BF62EF /* SCStockMostLoser.swift */,
+				0D59A10F22DC3B4B00BF62EF /* SCStockForexList.swift */,
+				0D59A11122DC3B6B00BF62EF /* SCStockForexListItem.swift */,
+				0D59A11322DC3BFC00BF62EF /* SCStockCryptocurrenciesList.swift */,
+				0D59A11522DC3C2B00BF62EF /* SCStockCryptocurrenciesListItem.swift */,
+				0D59A11722DC3CDB00BF62EF /* SCStockSectorPerformance.swift */,
+				0D59A11922DC3CFE00BF62EF /* SCStockSectorPerformanceItem.swift */,
+			);
+			path = Stock;
+			sourceTree = "<group>";
+		};
+		0D59A10022DBF35900BF62EF /* Stock */ = {
+			isa = PBXGroup;
+			children = (
+				0D59A10122DBF37100BF62EF /* SCStockListViewModel.swift */,
+				0D59A10D22DC0C5900BF62EF /* SCStockInfoViewModel.swift */,
+				0D59A11B22DC3FFB00BF62EF /* SCStockForexViewModel.swift */,
+				0D59A11D22DC403600BF62EF /* SCStockCryptocurrenciesViewModel.swift */,
+			);
+			path = Stock;
+			sourceTree = "<group>";
+		};
 		0D6962A822DAB8FE00244D8A = {
 			isa = PBXGroup;
 			children = (
@@ -267,6 +347,7 @@
 		0D6962E522DAB98600244D8A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0D59A0F722DBF18D00BF62EF /* Stock */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -287,6 +368,7 @@
 		0D6962E722DAB98600244D8A /* View Model */ = {
 			isa = PBXGroup;
 			children = (
+				0D59A10022DBF35900BF62EF /* Stock */,
 			);
 			path = "View Model";
 			sourceTree = "<group>";
@@ -295,6 +377,7 @@
 			isa = PBXGroup;
 			children = (
 				0D6962E922DABA1600244D8A /* SCNetworkManager.swift */,
+				0D59A10322DBF5CE00BF62EF /* SCNetworkManager+extension.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -358,6 +441,7 @@
 				0D69631422DABA1700244D8A /* UIPageControl+extension.swift */,
 				0D69631522DABA1700244D8A /* UIBarButtonItem+extension.swift */,
 				0D69631622DABA1700244D8A /* UITableView+extension.swift */,
+				0D59A12D22DC528A00BF62EF /* Double+extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -426,6 +510,16 @@
 		0D69635022DAF4BF00244D8A /* Display View */ = {
 			isa = PBXGroup;
 			children = (
+				0D59A10522DC007400BF62EF /* SCStockDisplayView.swift */,
+				0D59A10722DC00D200BF62EF /* SCStockDisplayView.xib */,
+				0D59A10B22DC017500BF62EF /* SCStockInfoCell.swift */,
+				0D59A10922DC013500BF62EF /* SCStockInfoCell.xib */,
+				0D59A12122DC423600BF62EF /* SCStockForexCell.swift */,
+				0D59A12322DC424400BF62EF /* SCStockForexCell.xib */,
+				0D59A12522DC427700BF62EF /* SCStockCryptocurrenciesCell.swift */,
+				0D59A12722DC428B00BF62EF /* SCStockCryptocurrenciesCell.xib */,
+				0D59A12922DC42A700BF62EF /* SCStockSectorPerformanceCell.swift */,
+				0D59A12B22DC42B800BF62EF /* SCStockSectorPerformanceCell.xib */,
 			);
 			path = "Display View";
 			sourceTree = "<group>";
@@ -545,9 +639,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D59A12422DC424400BF62EF /* SCStockForexCell.xib in Resources */,
 				0D69633C22DABBA600244D8A /* main.json in Resources */,
 				0D6962BF22DAB8FF00244D8A /* LaunchScreen.storyboard in Resources */,
+				0D59A10822DC00D200BF62EF /* SCStockDisplayView.xib in Resources */,
 				0D6962BC22DAB8FF00244D8A /* Assets.xcassets in Resources */,
+				0D59A12C22DC42B800BF62EF /* SCStockSectorPerformanceCell.xib in Resources */,
+				0D59A10A22DC013500BF62EF /* SCStockInfoCell.xib in Resources */,
+				0D59A12822DC428B00BF62EF /* SCStockCryptocurrenciesCell.xib in Resources */,
 				0D69635422DAF65B00244D8A /* SCStockCategoryView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -638,20 +737,29 @@
 			files = (
 				0D69634C22DABFD800244D8A /* SCNewsViewController.swift in Sources */,
 				0D69632F22DABA1700244D8A /* UIViewController+extension.swift in Sources */,
+				0D59A12622DC427700BF62EF /* SCStockCryptocurrenciesCell.swift in Sources */,
 				0D69632922DABA1700244D8A /* UILabel+extension.swift in Sources */,
+				0D59A11422DC3BFC00BF62EF /* SCStockCryptocurrenciesList.swift in Sources */,
+				0D59A10E22DC0C5900BF62EF /* SCStockInfoViewModel.swift in Sources */,
 				0D69631F22DABA1700244D8A /* UIScreen+UISCreen_extenshion.m in Sources */,
 				0D69634622DABF9400244D8A /* SCStockViewController.swift in Sources */,
+				0D59A0FD22DBF2B400BF62EF /* SCStockMostGainer.swift in Sources */,
 				0D69631A22DABA1700244D8A /* UINavigationController+WJObjcSugar.m in Sources */,
+				0D59A10422DBF5CE00BF62EF /* SCNetworkManager+extension.swift in Sources */,
 				0D69632B22DABA1700244D8A /* UIImage+extension.swift in Sources */,
 				0D69632C22DABA1700244D8A /* UINavigationController+extension.swift in Sources */,
 				0D69632A22DABA1700244D8A /* UIView+extension.swift in Sources */,
 				0D69633122DABA1700244D8A /* UITableViewCell+extension.swift in Sources */,
+				0D59A10222DBF37100BF62EF /* SCStockListViewModel.swift in Sources */,
 				0D69631722DABA1700244D8A /* SCNetworkManager.swift in Sources */,
+				0D59A0FF22DBF2CE00BF62EF /* SCStockMostLoser.swift in Sources */,
 				0D69635222DAF5E900244D8A /* SCStockCategoryView.swift in Sources */,
 				0D69634A22DABFC800244D8A /* SCSearchViewController.swift in Sources */,
+				0D59A10C22DC017500BF62EF /* SCStockInfoCell.swift in Sources */,
 				0D6962B522DAB8FE00244D8A /* AppDelegate.swift in Sources */,
 				0D69634E22DABFE900244D8A /* SCMoreViewController.swift in Sources */,
 				0D69631822DABA1700244D8A /* MXCornerRadius.m in Sources */,
+				0D59A11222DC3B6B00BF62EF /* SCStockForexListItem.swift in Sources */,
 				0D69633B22DABBA600244D8A /* SCMainViewController.swift in Sources */,
 				0D69632722DABA1700244D8A /* UIWindow+extension.swift in Sources */,
 				0D69631E22DABA1700244D8A /* NSString+SCAddition.m in Sources */,
@@ -660,23 +768,35 @@
 				0D69632122DABA1700244D8A /* UILabel+SCAddition.m in Sources */,
 				0D69633322DABA1700244D8A /* UIPageControl+extension.swift in Sources */,
 				0D69632622DABA1700244D8A /* UIFont+extension.swift in Sources */,
+				0D59A11A22DC3CFE00BF62EF /* SCStockSectorPerformanceItem.swift in Sources */,
 				0D69632022DABA1700244D8A /* CABasicAnimation+SCAddition.m in Sources */,
 				0D69631D22DABA1700244D8A /* UIImageView+SCAddition.m in Sources */,
 				0D69633D22DABBA600244D8A /* SCNavigationViewController.swift in Sources */,
 				0D69632522DABA1700244D8A /* NSAttributedString+extension.swift in Sources */,
+				0D59A12E22DC528A00BF62EF /* Double+extension.swift in Sources */,
 				0D69633022DABA1700244D8A /* String+extension.swift in Sources */,
+				0D59A11622DC3C2B00BF62EF /* SCStockCryptocurrenciesListItem.swift in Sources */,
 				0D69631C22DABA1700244D8A /* UIColor+WJObjcSugar.m in Sources */,
 				0D69632422DABA1700244D8A /* UIImageView+extension.swift in Sources */,
 				0D69632322DABA1700244D8A /* UIApplication+extension.swift in Sources */,
 				0D69632D22DABA1700244D8A /* Bundle+extension.swift in Sources */,
+				0D59A11822DC3CDB00BF62EF /* SCStockSectorPerformance.swift in Sources */,
 				0D69632822DABA1700244D8A /* Date+extension.swift in Sources */,
+				0D59A12A22DC42A700BF62EF /* SCStockSectorPerformanceCell.swift in Sources */,
 				0D69634822DABFB100244D8A /* SCIndexesViewController.swift in Sources */,
 				0D69632E22DABA1700244D8A /* UITabBarController+extension.swift in Sources */,
 				0D69633222DABA1700244D8A /* WKWebView+extension.swift in Sources */,
 				0D69632222DABA1700244D8A /* UIColor+SCAddition.m in Sources */,
+				0D59A11E22DC403600BF62EF /* SCStockCryptocurrenciesViewModel.swift in Sources */,
+				0D59A11022DC3B4B00BF62EF /* SCStockForexList.swift in Sources */,
+				0D59A11C22DC3FFB00BF62EF /* SCStockForexViewModel.swift in Sources */,
 				0D69631922DABA1700244D8A /* UIButton+SCAddition.m in Sources */,
+				0D59A0F922DBF1D800BF62EF /* SCStockListItem.swift in Sources */,
+				0D59A0FB22DBF26300BF62EF /* SCStockMostActive.swift in Sources */,
 				0D69631B22DABA1700244D8A /* NSObject+SCAddition.m in Sources */,
+				0D59A10622DC007400BF62EF /* SCStockDisplayView.swift in Sources */,
 				0D69633522DABA1700244D8A /* UITableView+extension.swift in Sources */,
+				0D59A12222DC423600BF62EF /* SCStockForexCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

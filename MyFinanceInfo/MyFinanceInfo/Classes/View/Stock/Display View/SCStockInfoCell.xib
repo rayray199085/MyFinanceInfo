@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="73" id="EEl-VH-8gs" customClass="SCStockInfoCell" customModule="MyFinanceInfo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="508" height="68"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="EEl-VH-8gs" id="rfN-Bt-efB">
+                <rect key="frame" x="0.0" y="0.0" width="508" height="67.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MELI" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hs0-f8-SsD">
+                        <rect key="frame" x="3" y="3" width="36" height="18"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="gu0-iW-wzr">
+                        <rect key="frame" x="3" y="45" width="176" height="18"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="646.76$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uc3-bl-kmJ">
+                                <rect key="frame" x="0.0" y="0.0" width="59" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+5.07$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cST-Bw-yFy">
+                                <rect key="frame" x="67" y="0.0" width="48.5" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.32546061277389526" green="0.64373654127120972" blue="0.31754428148269653" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+0.79%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KDd-EZ-3uE">
+                                <rect key="frame" x="123.5" y="0.0" width="52.5" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.32549019607843138" green="0.64313725490196072" blue="0.31764705882352939" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grupo Aeroportuario del Sureste S.A. de C.V." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LPi-CZ-Shx">
+                        <rect key="frame" x="3" y="24" width="502" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Hs0-f8-SsD" firstAttribute="leading" secondItem="rfN-Bt-efB" secondAttribute="leading" constant="3" id="3Bg-dQ-V8C"/>
+                    <constraint firstItem="Hs0-f8-SsD" firstAttribute="top" secondItem="rfN-Bt-efB" secondAttribute="top" constant="3" id="5kc-tw-01e"/>
+                    <constraint firstAttribute="trailing" secondItem="LPi-CZ-Shx" secondAttribute="trailing" constant="3" id="AZi-bL-3Se"/>
+                    <constraint firstItem="LPi-CZ-Shx" firstAttribute="leading" secondItem="Hs0-f8-SsD" secondAttribute="leading" id="Xwj-2D-2xN"/>
+                    <constraint firstItem="gu0-iW-wzr" firstAttribute="leading" secondItem="Hs0-f8-SsD" secondAttribute="leading" id="kki-Qi-hDJ"/>
+                    <constraint firstItem="LPi-CZ-Shx" firstAttribute="top" secondItem="Hs0-f8-SsD" secondAttribute="bottom" constant="3" id="nW1-1i-cm0"/>
+                    <constraint firstItem="gu0-iW-wzr" firstAttribute="top" secondItem="LPi-CZ-Shx" secondAttribute="bottom" constant="3" id="qf1-nr-Ust"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="changeLabel" destination="cST-Bw-yFy" id="WNm-yi-F8C"/>
+                <outlet property="changePercentageLabel" destination="KDd-EZ-3uE" id="rov-iJ-ZiA"/>
+                <outlet property="nameLabel" destination="LPi-CZ-Shx" id="6Pe-wk-oJ2"/>
+                <outlet property="priceLabel" destination="uc3-bl-kmJ" id="teP-Vh-ar3"/>
+                <outlet property="tickerLabel" destination="Hs0-f8-SsD" id="5Gv-l1-18X"/>
+            </connections>
+            <point key="canvasLocation" x="331.8840579710145" y="105.13392857142857"/>
+        </tableViewCell>
+    </objects>
+</document>
