@@ -8,7 +8,7 @@
 
 import UIKit
 protocol SCStockCategoryViewDelegate: NSObjectProtocol {
-    func didSelectedHideCategory(view: SCStockCategoryView?, index: Int)
+    func didClickCategoryMaskButton(view: SCStockCategoryView?, index: Int)
 }
 private let reuseIdentifier = "category_cell"
 class SCStockCategoryView: UIView {
@@ -16,7 +16,7 @@ class SCStockCategoryView: UIView {
     
     private var selectedIndex: Int = -1
     
-    private let headers = ["Info","Data"]
+    private let headers = ["Stock","Others"]
     private let titles = ["Actives","Gainers","Losers","Currencies","Cryptocurrency","Sector Performance"]
     class func categoryView()->SCStockCategoryView{
         let nib = UINib(nibName: "SCStockCategoryView", bundle: nil)
@@ -28,7 +28,7 @@ class SCStockCategoryView: UIView {
     
     @IBAction func clickCategoryMaskButton(_ sender: Any) {
         hideCategoryView { [weak self](index) in
-           self?.delegate?.didSelectedHideCategory(view: self, index: index)
+           self?.delegate?.didClickCategoryMaskButton(view: self, index: index)
         }
     }
     override func awakeFromNib() {

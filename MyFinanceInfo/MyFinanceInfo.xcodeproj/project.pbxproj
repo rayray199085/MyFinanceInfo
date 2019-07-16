@@ -80,6 +80,9 @@
 		0D69634E22DABFE900244D8A /* SCMoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D69634D22DABFE900244D8A /* SCMoreViewController.swift */; };
 		0D69635222DAF5E900244D8A /* SCStockCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D69635122DAF5E900244D8A /* SCStockCategoryView.swift */; };
 		0D69635422DAF65B00244D8A /* SCStockCategoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D69635322DAF65B00244D8A /* SCStockCategoryView.xib */; };
+		0DFC175922DD50F500F3F95F /* SCStockSectorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFC175822DD50F500F3F95F /* SCStockSectorViewModel.swift */; };
+		0DFC175C22DD9D1900F3F95F /* SCCompanyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFC175B22DD9D1900F3F95F /* SCCompanyViewController.swift */; };
+		0DFC175F22DD9D3B00F3F95F /* SCCompanyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DFC175E22DD9D3B00F3F95F /* SCCompanyViewController.xib */; };
 		A11FADA7052EDE55BBA04E85 /* Pods_MyFinanceInfo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8408A219B325FEAF5F5A4CE0 /* Pods_MyFinanceInfo.framework */; };
 /* End PBXBuildFile section */
 
@@ -193,6 +196,9 @@
 		0D69634D22DABFE900244D8A /* SCMoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCMoreViewController.swift; sourceTree = "<group>"; };
 		0D69635122DAF5E900244D8A /* SCStockCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCStockCategoryView.swift; sourceTree = "<group>"; };
 		0D69635322DAF65B00244D8A /* SCStockCategoryView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SCStockCategoryView.xib; sourceTree = "<group>"; };
+		0DFC175822DD50F500F3F95F /* SCStockSectorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCStockSectorViewModel.swift; sourceTree = "<group>"; };
+		0DFC175B22DD9D1900F3F95F /* SCCompanyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCCompanyViewController.swift; sourceTree = "<group>"; };
+		0DFC175E22DD9D3B00F3F95F /* SCCompanyViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SCCompanyViewController.xib; sourceTree = "<group>"; };
 		8408A219B325FEAF5F5A4CE0 /* Pods_MyFinanceInfo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyFinanceInfo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B13896327FE91959FA9B69F2 /* Pods-MyFinanceInfo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyFinanceInfo.release.xcconfig"; path = "Target Support Files/Pods-MyFinanceInfo/Pods-MyFinanceInfo.release.xcconfig"; sourceTree = "<group>"; };
 		F9D381AFF196529117A5E74C /* Pods-MyFinanceInfo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyFinanceInfo.debug.xcconfig"; path = "Target Support Files/Pods-MyFinanceInfo/Pods-MyFinanceInfo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -256,6 +262,7 @@
 				0D59A10D22DC0C5900BF62EF /* SCStockInfoViewModel.swift */,
 				0D59A11B22DC3FFB00BF62EF /* SCStockForexViewModel.swift */,
 				0D59A11D22DC403600BF62EF /* SCStockCryptocurrenciesViewModel.swift */,
+				0DFC175822DD50F500F3F95F /* SCStockSectorViewModel.swift */,
 			);
 			path = Stock;
 			sourceTree = "<group>";
@@ -356,7 +363,7 @@
 			isa = PBXGroup;
 			children = (
 				0D69633722DABB6200244D8A /* Base */,
-				0D69634122DABF6200244D8A /* Stock */,
+				0D69634122DABF6200244D8A /* Market */,
 				0D69634222DABF6200244D8A /* Indexes */,
 				0D69634322DABF6200244D8A /* Search */,
 				0D69634422DABF6200244D8A /* News */,
@@ -464,14 +471,15 @@
 			path = More;
 			sourceTree = "<group>";
 		};
-		0D69634122DABF6200244D8A /* Stock */ = {
+		0D69634122DABF6200244D8A /* Market */ = {
 			isa = PBXGroup;
 			children = (
+				0DFC175A22DD9CEC00F3F95F /* Company View */,
 				0D69635022DAF4BF00244D8A /* Display View */,
 				0D69634F22DAF4A300244D8A /* Category View */,
 				0D69634522DABF9400244D8A /* SCStockViewController.swift */,
 			);
-			path = Stock;
+			path = Market;
 			sourceTree = "<group>";
 		};
 		0D69634222DABF6200244D8A /* Indexes */ = {
@@ -522,6 +530,15 @@
 				0D59A12B22DC42B800BF62EF /* SCStockSectorPerformanceCell.xib */,
 			);
 			path = "Display View";
+			sourceTree = "<group>";
+		};
+		0DFC175A22DD9CEC00F3F95F /* Company View */ = {
+			isa = PBXGroup;
+			children = (
+				0DFC175B22DD9D1900F3F95F /* SCCompanyViewController.swift */,
+				0DFC175E22DD9D3B00F3F95F /* SCCompanyViewController.xib */,
+			);
+			path = "Company View";
 			sourceTree = "<group>";
 		};
 		717BFB94295E8BCFDEEF5FB0 /* Pods */ = {
@@ -641,6 +658,7 @@
 			files = (
 				0D59A12422DC424400BF62EF /* SCStockForexCell.xib in Resources */,
 				0D69633C22DABBA600244D8A /* main.json in Resources */,
+				0DFC175F22DD9D3B00F3F95F /* SCCompanyViewController.xib in Resources */,
 				0D6962BF22DAB8FF00244D8A /* LaunchScreen.storyboard in Resources */,
 				0D59A10822DC00D200BF62EF /* SCStockDisplayView.xib in Resources */,
 				0D6962BC22DAB8FF00244D8A /* Assets.xcassets in Resources */,
@@ -682,6 +700,7 @@
 				"${BUILT_PRODUCTS_DIR}/DLSlideView/DLSlideView.framework",
 				"${BUILT_PRODUCTS_DIR}/FBRetainCycleDetector/FBRetainCycleDetector.framework",
 				"${BUILT_PRODUCTS_DIR}/MLeaksFinder/MLeaksFinder.framework",
+				"${BUILT_PRODUCTS_DIR}/SCRRefreshControl/SCRRefreshControl.framework",
 				"${BUILT_PRODUCTS_DIR}/SCTableIndex/SCTableIndex.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
@@ -696,6 +715,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DLSlideView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBRetainCycleDetector.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MLeaksFinder.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SCRRefreshControl.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SCTableIndex.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
@@ -749,6 +769,7 @@
 				0D69632B22DABA1700244D8A /* UIImage+extension.swift in Sources */,
 				0D69632C22DABA1700244D8A /* UINavigationController+extension.swift in Sources */,
 				0D69632A22DABA1700244D8A /* UIView+extension.swift in Sources */,
+				0DFC175922DD50F500F3F95F /* SCStockSectorViewModel.swift in Sources */,
 				0D69633122DABA1700244D8A /* UITableViewCell+extension.swift in Sources */,
 				0D59A10222DBF37100BF62EF /* SCStockListViewModel.swift in Sources */,
 				0D69631722DABA1700244D8A /* SCNetworkManager.swift in Sources */,
@@ -770,6 +791,7 @@
 				0D69632622DABA1700244D8A /* UIFont+extension.swift in Sources */,
 				0D59A11A22DC3CFE00BF62EF /* SCStockSectorPerformanceItem.swift in Sources */,
 				0D69632022DABA1700244D8A /* CABasicAnimation+SCAddition.m in Sources */,
+				0DFC175C22DD9D1900F3F95F /* SCCompanyViewController.swift in Sources */,
 				0D69631D22DABA1700244D8A /* UIImageView+SCAddition.m in Sources */,
 				0D69633D22DABBA600244D8A /* SCNavigationViewController.swift in Sources */,
 				0D69632522DABA1700244D8A /* NSAttributedString+extension.swift in Sources */,

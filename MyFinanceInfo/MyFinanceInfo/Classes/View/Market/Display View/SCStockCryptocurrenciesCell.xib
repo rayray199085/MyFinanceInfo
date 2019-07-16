@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="49" id="dXh-hD-B0Q" customClass="SCStockCryptocurrenciesCell" customModule="MyFinanceInfo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dXh-hD-B0Q" id="Paf-hR-Kdw">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="48.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+0.03%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0kK-zd-XVT">
+                        <rect key="frame" x="310.5" y="3" width="52.5" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.32549019610000002" green="0.64313725489999995" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+375.3308$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b8R-wU-oT6">
+                        <rect key="frame" x="207" y="3" width="86" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.32549019610000002" green="0.64313725489999995" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BTC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0dV-R6-jIP">
+                        <rect key="frame" x="3" y="3" width="30.5" height="18"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10,888.8000$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dMb-Ug-kql">
+                        <rect key="frame" x="83" y="3" width="97" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bitcoin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R3g-rb-jRF">
+                        <rect key="frame" x="3" y="24" width="47" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="0kK-zd-XVT" firstAttribute="centerY" secondItem="0dV-R6-jIP" secondAttribute="centerY" id="BIN-wr-Yxs"/>
+                    <constraint firstItem="dMb-Ug-kql" firstAttribute="leading" secondItem="Paf-hR-Kdw" secondAttribute="centerX" multiplier="0.4" id="EBH-s4-ldo"/>
+                    <constraint firstItem="R3g-rb-jRF" firstAttribute="leading" secondItem="0dV-R6-jIP" secondAttribute="leading" id="H8J-WY-Kid"/>
+                    <constraint firstItem="0dV-R6-jIP" firstAttribute="top" secondItem="Paf-hR-Kdw" secondAttribute="top" constant="3" id="Pmg-ts-0I8"/>
+                    <constraint firstItem="b8R-wU-oT6" firstAttribute="leading" secondItem="Paf-hR-Kdw" secondAttribute="centerX" id="ede-OX-vho"/>
+                    <constraint firstItem="dMb-Ug-kql" firstAttribute="centerY" secondItem="0dV-R6-jIP" secondAttribute="centerY" id="ij9-KA-ItA"/>
+                    <constraint firstItem="R3g-rb-jRF" firstAttribute="top" secondItem="0dV-R6-jIP" secondAttribute="bottom" constant="3" id="nhv-GK-7Vh"/>
+                    <constraint firstItem="b8R-wU-oT6" firstAttribute="centerY" secondItem="0dV-R6-jIP" secondAttribute="centerY" id="syO-B6-oQS"/>
+                    <constraint firstItem="0dV-R6-jIP" firstAttribute="leading" secondItem="Paf-hR-Kdw" secondAttribute="leading" constant="3" id="xPW-Gx-xXj"/>
+                    <constraint firstItem="0kK-zd-XVT" firstAttribute="leading" secondItem="Paf-hR-Kdw" secondAttribute="centerX" multiplier="1.5" id="z7C-OQ-jM6"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="changesLabel" destination="b8R-wU-oT6" id="iWt-la-Bx3"/>
+                <outlet property="changesPercentageLabel" destination="0kK-zd-XVT" id="Kwd-p2-TbC"/>
+                <outlet property="nameLabel" destination="R3g-rb-jRF" id="gh8-lM-5iH"/>
+                <outlet property="priceLabel" destination="dMb-Ug-kql" id="RlL-g6-Jrs"/>
+                <outlet property="symbolLabel" destination="0dV-R6-jIP" id="87E-my-dx7"/>
+            </connections>
+            <point key="canvasLocation" x="140.57971014492756" y="142.29910714285714"/>
+        </tableViewCell>
+    </objects>
+</document>

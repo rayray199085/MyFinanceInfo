@@ -28,12 +28,12 @@ struct SCStockForexViewModel {
         
         if (item.changes ?? 0) >= 0{
             changes = "+\(itemChanges)"
-            changesPercentage = String(format: "+%.2f%", itemChangesPercentage)
+            changesPercentage = String(format: "+%.2f%%", itemChangesPercentage)
             changesColour = InfoCommon.increasingPriceColor
             changesPercentageColour = InfoCommon.increasingPriceColor
         }else{
             changes = "\(itemChanges)"
-            changesPercentage = String(format: "%.2f%", itemChangesPercentage)
+            changesPercentage = String(format: "%.2f%%", itemChangesPercentage)
             changesColour = InfoCommon.decreasingPriceColor
             changesPercentageColour = InfoCommon.decreasingPriceColor
         }

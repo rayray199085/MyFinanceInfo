@@ -14,5 +14,6 @@ pod "SVProgressHUD"
 pod "SCTableIndex"
 pod 'MLeaksFinder'
 pod 'DLSlideView', :git => 'https://github.com/agdsdl/DLSlideView.git'
+pod "SCRRefreshControl"
 
 end

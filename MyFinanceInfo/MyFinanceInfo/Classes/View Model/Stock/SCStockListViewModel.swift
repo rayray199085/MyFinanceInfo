@@ -16,7 +16,7 @@ class SCStockListViewModel {
     var infoViewModels: [SCStockInfoViewModel]?
     var forexViewModels: [SCStockForexViewModel]?
     var cryptocurrenciesViewModels: [SCStockCryptocurrenciesViewModel]?
-    var sectorPerformanceItems: [SCStockSectorPerformanceItem]?
+    var sectorPerformanceViewModels: [SCStockSectorViewModel]?
     
     func loadStockData(index: Int, completion:@escaping (_ isSuccess: Bool)->()){
         SCNetworkManager.shared.getStockData(suffix: suffixArray[index]) { (data, isSuccess) in
@@ -68,7 +68,11 @@ class SCStockListViewModel {
                     completion(false)
                     return
                 }
-                self.sectorPerformanceItems = sectorPerformance
+                var viewModels = [SCStockSectorViewModel]()
+                for item in sectorPerformance{
+                    viewModels.append(SCStockSectorViewModel(item: item))
+                }
+                self.sectorPerformanceViewModels = viewModels
             default:
                 break
             }

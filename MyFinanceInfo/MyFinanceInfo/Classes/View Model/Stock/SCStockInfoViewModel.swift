@@ -54,7 +54,6 @@ private extension SCStockInfoViewModel{
         height += margin
         let viewSize = CGSize(width: UIScreen.screenWidth() - 2 * margin, height: CGFloat(MAXFLOAT))
         height += companyName.getTextHeight(size: viewSize, font: UIFont.systemFont(ofSize: 15))
-        height += margin + labelHeight
         height += margin * 4
         return height
     }

@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
-        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -25,28 +24,23 @@
                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="gu0-iW-wzr">
-                        <rect key="frame" x="3" y="45" width="176" height="18"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="646.76$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uc3-bl-kmJ">
-                                <rect key="frame" x="0.0" y="0.0" width="59" height="18"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+5.07$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cST-Bw-yFy">
-                                <rect key="frame" x="67" y="0.0" width="48.5" height="18"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <color key="textColor" red="0.32546061277389526" green="0.64373654127120972" blue="0.31754428148269653" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+0.79%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KDd-EZ-3uE">
-                                <rect key="frame" x="123.5" y="0.0" width="52.5" height="18"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <color key="textColor" red="0.32549019607843138" green="0.64313725490196072" blue="0.31764705882352939" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                    </stackView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="646.76$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uc3-bl-kmJ">
+                        <rect key="frame" x="127" y="3" width="59" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+5.07$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cST-Bw-yFy">
+                        <rect key="frame" x="254" y="3" width="48.5" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.32546061277389526" green="0.64373654127120972" blue="0.31754428148269653" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+0.79%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KDd-EZ-3uE">
+                        <rect key="frame" x="381" y="3" width="52.5" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.32549019607843138" green="0.64313725490196072" blue="0.31764705882352939" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grupo Aeroportuario del Sureste S.A. de C.V." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LPi-CZ-Shx">
                         <rect key="frame" x="3" y="24" width="502" height="18"/>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -56,12 +50,16 @@
                 </subviews>
                 <constraints>
                     <constraint firstItem="Hs0-f8-SsD" firstAttribute="leading" secondItem="rfN-Bt-efB" secondAttribute="leading" constant="3" id="3Bg-dQ-V8C"/>
+                    <constraint firstItem="uc3-bl-kmJ" firstAttribute="centerY" secondItem="Hs0-f8-SsD" secondAttribute="centerY" id="3Q0-6a-93z"/>
                     <constraint firstItem="Hs0-f8-SsD" firstAttribute="top" secondItem="rfN-Bt-efB" secondAttribute="top" constant="3" id="5kc-tw-01e"/>
+                    <constraint firstItem="cST-Bw-yFy" firstAttribute="leading" secondItem="rfN-Bt-efB" secondAttribute="centerX" id="5lc-a5-Yy3"/>
                     <constraint firstAttribute="trailing" secondItem="LPi-CZ-Shx" secondAttribute="trailing" constant="3" id="AZi-bL-3Se"/>
+                    <constraint firstItem="cST-Bw-yFy" firstAttribute="centerY" secondItem="uc3-bl-kmJ" secondAttribute="centerY" id="SEz-s3-8o2"/>
                     <constraint firstItem="LPi-CZ-Shx" firstAttribute="leading" secondItem="Hs0-f8-SsD" secondAttribute="leading" id="Xwj-2D-2xN"/>
-                    <constraint firstItem="gu0-iW-wzr" firstAttribute="leading" secondItem="Hs0-f8-SsD" secondAttribute="leading" id="kki-Qi-hDJ"/>
+                    <constraint firstItem="KDd-EZ-3uE" firstAttribute="leading" secondItem="rfN-Bt-efB" secondAttribute="centerX" multiplier="1.5" id="bzH-uN-wkP"/>
+                    <constraint firstItem="uc3-bl-kmJ" firstAttribute="leading" secondItem="rfN-Bt-efB" secondAttribute="centerX" multiplier="0.5" id="fek-US-x9I"/>
                     <constraint firstItem="LPi-CZ-Shx" firstAttribute="top" secondItem="Hs0-f8-SsD" secondAttribute="bottom" constant="3" id="nW1-1i-cm0"/>
-                    <constraint firstItem="gu0-iW-wzr" firstAttribute="top" secondItem="LPi-CZ-Shx" secondAttribute="bottom" constant="3" id="qf1-nr-Ust"/>
+                    <constraint firstItem="cST-Bw-yFy" firstAttribute="centerY" secondItem="KDd-EZ-3uE" secondAttribute="centerY" id="yJL-Kt-AR0"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>

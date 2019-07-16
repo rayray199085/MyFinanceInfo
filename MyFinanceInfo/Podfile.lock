@@ -7,6 +7,7 @@ PODS:
   - MLeaksFinder (1.0.0):
     - FBRetainCycleDetector
   - pop (1.0.12)
+  - SCRRefreshControl (0.1.1)
   - SCTableIndex (0.3.0)
   - SDWebImage (5.0.2):
     - SDWebImage/Core (= 5.0.2)
@@ -19,6 +20,7 @@ DEPENDENCIES:
   - DLSlideView (from `https://github.com/agdsdl/DLSlideView.git`)
   - MLeaksFinder
   - pop
+  - SCRRefreshControl
   - SCTableIndex
   - SDWebImage
   - SVProgressHUD
@@ -30,6 +32,7 @@ SPEC REPOS:
     - FBRetainCycleDetector
     - MLeaksFinder
     - pop
+    - SCRRefreshControl
     - SCTableIndex
     - SDWebImage
     - SVProgressHUD
@@ -50,10 +53,11 @@ SPEC CHECKSUMS:
   FBRetainCycleDetector: 46f8179bbb1c587deee3ea838a1a3ee02acf5015
   MLeaksFinder: 8c435bd2f6d070af18cff082b503b21adc130fc0
   pop: d582054913807fd11fd50bfe6a539d91c7e1a55a
+  SCRRefreshControl: 889e57f1cf14000f4810f572e502d39b95926cd1
   SCTableIndex: db2a0917f5df1d63dfa2b02bb232426da414a66d
   SDWebImage: 6764b5fa0f73c203728052955dbefa2bf1f33282
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
-PODFILE CHECKSUM: 700aa51d77839203ec716c29d3fc6a4494443a35
+PODFILE CHECKSUM: 51d36d7b02f677f1d0c9bc02540267b3610ca137
 
 COCOAPODS: 1.6.1

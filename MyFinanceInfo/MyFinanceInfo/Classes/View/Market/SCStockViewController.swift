@@ -1,5 +1,5 @@
 //
-//  SCStockViewController.swift
+//  SCMarketViewController.swift
 //  MyFinanceInfo
 //
 //  Created by Stephen Cao on 14/7/19.
@@ -9,7 +9,7 @@
 import UIKit
 import SVProgressHUD
 
-class SCStockViewController: UIViewController {
+class SCMarketViewController: UIViewController {
     private let categoryView = SCStockCategoryView.categoryView()
     private let displayView = SCStockDisplayView.displayView()
     private let listViewModel = SCStockListViewModel()
@@ -44,19 +44,33 @@ class SCStockViewController: UIViewController {
         }
     }
 }
-private extension SCStockViewController{
+private extension SCMarketViewController{
     func setupUI(){
         view.addSubview(displayView)
         displayView.listViewModel = listViewModel
-        
+        displayView.delegate = self
         navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .search, target: self, action: #selector(clickSearchButton))
         view.addSubview(categoryView)
         categoryView.frame.origin.x = -UIScreen.screenWidth()
         categoryView.delegate = self
     }
 }
-extension SCStockViewController: SCStockCategoryViewDelegate{
-    func didSelectedHideCategory(view: SCStockCategoryView?, index: Int) {
+extension SCMarketViewController: SCStockCategoryViewDelegate{
+    func didClickCategoryMaskButton(view: SCStockCategoryView?, index: Int) {
         loadData(index: index)
+    }
+}
+extension SCMarketViewController: SCStockDisplayViewDelegate{
+    func didSelectedCompany(view: SCStockDisplayView, ticker: String) {
+        let vc = SCCompanyViewController()
+        vc.title = ticker
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    func didPullRefreshControl(view: SCStockDisplayView, completion: @escaping () -> ()) {
+        listViewModel.loadStockData(index: listViewModel.previewIndex) { [weak self](isSuccess) in
+            self?.displayView.tableView.reloadData()
+            completion()
+        }
     }
 }
