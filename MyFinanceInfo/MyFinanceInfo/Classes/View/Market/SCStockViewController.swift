@@ -64,6 +64,7 @@ extension SCMarketViewController: SCStockDisplayViewDelegate{
     func didSelectedCompany(view: SCStockDisplayView, ticker: String) {
         let vc = SCCompanyViewController()
         vc.title = ticker
+        vc.listViewModel = listViewModel
         navigationController?.pushViewController(vc, animated: true)
     }
     

@@ -80,6 +80,20 @@
 		0D69634E22DABFE900244D8A /* SCMoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D69634D22DABFE900244D8A /* SCMoreViewController.swift */; };
 		0D69635222DAF5E900244D8A /* SCStockCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D69635122DAF5E900244D8A /* SCStockCategoryView.swift */; };
 		0D69635422DAF65B00244D8A /* SCStockCategoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D69635322DAF65B00244D8A /* SCStockCategoryView.xib */; };
+		0DEEA42F22DE915900BCCC83 /* SCCompanyAboutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DEEA42E22DE915900BCCC83 /* SCCompanyAboutController.swift */; };
+		0DEEA43322DE92C200BCCC83 /* SCCompanyAboutHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DEEA43222DE92C200BCCC83 /* SCCompanyAboutHeaderView.swift */; };
+		0DEEA43722DE966C00BCCC83 /* SCCompanyAboutController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DEEA43622DE966C00BCCC83 /* SCCompanyAboutController.storyboard */; };
+		0DEEA43922DE9ACD00BCCC83 /* SCCompanyAboutHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DEEA43822DE9ACD00BCCC83 /* SCCompanyAboutHeaderView.xib */; };
+		0DEEA44022DEA79200BCCC83 /* SCCompanyProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DEEA43F22DEA79200BCCC83 /* SCCompanyProfile.swift */; };
+		0DEEA44422DEAAF000BCCC83 /* SCCompanyFinancialRatios.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DEEA44322DEAAF000BCCC83 /* SCCompanyFinancialRatios.swift */; };
+		0DEEA44622DEAD5F00BCCC83 /* SCCompanyEnterpriseValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DEEA44522DEAD5F00BCCC83 /* SCCompanyEnterpriseValue.swift */; };
+		0DEEA44822DEAE6F00BCCC83 /* SCCompanyKeyMetrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DEEA44722DEAE6F00BCCC83 /* SCCompanyKeyMetrics.swift */; };
+		0DEEA44A22DEAF2F00BCCC83 /* SCCompanyRatings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DEEA44922DEAF2F00BCCC83 /* SCCompanyRatings.swift */; };
+		0DEEA44C22DECFC000BCCC83 /* SCCompanyProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DEEA44B22DECFC000BCCC83 /* SCCompanyProfileViewModel.swift */; };
+		0DEEA45122DED03A00BCCC83 /* SCCompanyEnterpriseValueViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DEEA44D22DED03A00BCCC83 /* SCCompanyEnterpriseValueViewModel.swift */; };
+		0DEEA45222DED03A00BCCC83 /* SCCompanyKeyMetricsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DEEA44E22DED03A00BCCC83 /* SCCompanyKeyMetricsViewModel.swift */; };
+		0DEEA45322DED03A00BCCC83 /* SCCompanyFinancialRatiosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DEEA44F22DED03A00BCCC83 /* SCCompanyFinancialRatiosViewModel.swift */; };
+		0DEEA45422DED03A00BCCC83 /* SCCompanyRatingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DEEA45022DED03A00BCCC83 /* SCCompanyRatingsViewModel.swift */; };
 		0DFC175922DD50F500F3F95F /* SCStockSectorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFC175822DD50F500F3F95F /* SCStockSectorViewModel.swift */; };
 		0DFC175C22DD9D1900F3F95F /* SCCompanyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFC175B22DD9D1900F3F95F /* SCCompanyViewController.swift */; };
 		0DFC175F22DD9D3B00F3F95F /* SCCompanyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DFC175E22DD9D3B00F3F95F /* SCCompanyViewController.xib */; };
@@ -196,6 +210,20 @@
 		0D69634D22DABFE900244D8A /* SCMoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCMoreViewController.swift; sourceTree = "<group>"; };
 		0D69635122DAF5E900244D8A /* SCStockCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCStockCategoryView.swift; sourceTree = "<group>"; };
 		0D69635322DAF65B00244D8A /* SCStockCategoryView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SCStockCategoryView.xib; sourceTree = "<group>"; };
+		0DEEA42E22DE915900BCCC83 /* SCCompanyAboutController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCCompanyAboutController.swift; sourceTree = "<group>"; };
+		0DEEA43222DE92C200BCCC83 /* SCCompanyAboutHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCCompanyAboutHeaderView.swift; sourceTree = "<group>"; };
+		0DEEA43622DE966C00BCCC83 /* SCCompanyAboutController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SCCompanyAboutController.storyboard; sourceTree = "<group>"; };
+		0DEEA43822DE9ACD00BCCC83 /* SCCompanyAboutHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SCCompanyAboutHeaderView.xib; sourceTree = "<group>"; };
+		0DEEA43F22DEA79200BCCC83 /* SCCompanyProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCCompanyProfile.swift; sourceTree = "<group>"; };
+		0DEEA44322DEAAF000BCCC83 /* SCCompanyFinancialRatios.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCCompanyFinancialRatios.swift; sourceTree = "<group>"; };
+		0DEEA44522DEAD5F00BCCC83 /* SCCompanyEnterpriseValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCCompanyEnterpriseValue.swift; sourceTree = "<group>"; };
+		0DEEA44722DEAE6F00BCCC83 /* SCCompanyKeyMetrics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCCompanyKeyMetrics.swift; sourceTree = "<group>"; };
+		0DEEA44922DEAF2F00BCCC83 /* SCCompanyRatings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCCompanyRatings.swift; sourceTree = "<group>"; };
+		0DEEA44B22DECFC000BCCC83 /* SCCompanyProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCCompanyProfileViewModel.swift; sourceTree = "<group>"; };
+		0DEEA44D22DED03A00BCCC83 /* SCCompanyEnterpriseValueViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCCompanyEnterpriseValueViewModel.swift; sourceTree = "<group>"; };
+		0DEEA44E22DED03A00BCCC83 /* SCCompanyKeyMetricsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCCompanyKeyMetricsViewModel.swift; sourceTree = "<group>"; };
+		0DEEA44F22DED03A00BCCC83 /* SCCompanyFinancialRatiosViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCCompanyFinancialRatiosViewModel.swift; sourceTree = "<group>"; };
+		0DEEA45022DED03A00BCCC83 /* SCCompanyRatingsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCCompanyRatingsViewModel.swift; sourceTree = "<group>"; };
 		0DFC175822DD50F500F3F95F /* SCStockSectorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCStockSectorViewModel.swift; sourceTree = "<group>"; };
 		0DFC175B22DD9D1900F3F95F /* SCCompanyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCCompanyViewController.swift; sourceTree = "<group>"; };
 		0DFC175E22DD9D3B00F3F95F /* SCCompanyViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SCCompanyViewController.xib; sourceTree = "<group>"; };
@@ -241,16 +269,8 @@
 		0D59A0F722DBF18D00BF62EF /* Stock */ = {
 			isa = PBXGroup;
 			children = (
-				0D59A0F822DBF1D800BF62EF /* SCStockListItem.swift */,
-				0D59A0FA22DBF26300BF62EF /* SCStockMostActive.swift */,
-				0D59A0FC22DBF2B400BF62EF /* SCStockMostGainer.swift */,
-				0D59A0FE22DBF2CE00BF62EF /* SCStockMostLoser.swift */,
-				0D59A10F22DC3B4B00BF62EF /* SCStockForexList.swift */,
-				0D59A11122DC3B6B00BF62EF /* SCStockForexListItem.swift */,
-				0D59A11322DC3BFC00BF62EF /* SCStockCryptocurrenciesList.swift */,
-				0D59A11522DC3C2B00BF62EF /* SCStockCryptocurrenciesListItem.swift */,
-				0D59A11722DC3CDB00BF62EF /* SCStockSectorPerformance.swift */,
-				0D59A11922DC3CFE00BF62EF /* SCStockSectorPerformanceItem.swift */,
+				0DEEA43D22DEA75E00BCCC83 /* Company */,
+				0DEEA43C22DEA75100BCCC83 /* Category */,
 			);
 			path = Stock;
 			sourceTree = "<group>";
@@ -258,11 +278,9 @@
 		0D59A10022DBF35900BF62EF /* Stock */ = {
 			isa = PBXGroup;
 			children = (
+				0DEEA43B22DEA3A200BCCC83 /* Company */,
+				0DEEA43A22DEA38000BCCC83 /* Category */,
 				0D59A10122DBF37100BF62EF /* SCStockListViewModel.swift */,
-				0D59A10D22DC0C5900BF62EF /* SCStockInfoViewModel.swift */,
-				0D59A11B22DC3FFB00BF62EF /* SCStockForexViewModel.swift */,
-				0D59A11D22DC403600BF62EF /* SCStockCryptocurrenciesViewModel.swift */,
-				0DFC175822DD50F500F3F95F /* SCStockSectorViewModel.swift */,
 			);
 			path = Stock;
 			sourceTree = "<group>";
@@ -532,9 +550,73 @@
 			path = "Display View";
 			sourceTree = "<group>";
 		};
+		0DEEA42D22DE913F00BCCC83 /* About */ = {
+			isa = PBXGroup;
+			children = (
+				0DEEA42E22DE915900BCCC83 /* SCCompanyAboutController.swift */,
+				0DEEA43622DE966C00BCCC83 /* SCCompanyAboutController.storyboard */,
+				0DEEA43222DE92C200BCCC83 /* SCCompanyAboutHeaderView.swift */,
+				0DEEA43822DE9ACD00BCCC83 /* SCCompanyAboutHeaderView.xib */,
+			);
+			path = About;
+			sourceTree = "<group>";
+		};
+		0DEEA43A22DEA38000BCCC83 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				0D59A10D22DC0C5900BF62EF /* SCStockInfoViewModel.swift */,
+				0D59A11B22DC3FFB00BF62EF /* SCStockForexViewModel.swift */,
+				0D59A11D22DC403600BF62EF /* SCStockCryptocurrenciesViewModel.swift */,
+				0DFC175822DD50F500F3F95F /* SCStockSectorViewModel.swift */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		0DEEA43B22DEA3A200BCCC83 /* Company */ = {
+			isa = PBXGroup;
+			children = (
+				0DEEA44D22DED03A00BCCC83 /* SCCompanyEnterpriseValueViewModel.swift */,
+				0DEEA44F22DED03A00BCCC83 /* SCCompanyFinancialRatiosViewModel.swift */,
+				0DEEA44E22DED03A00BCCC83 /* SCCompanyKeyMetricsViewModel.swift */,
+				0DEEA45022DED03A00BCCC83 /* SCCompanyRatingsViewModel.swift */,
+				0DEEA44B22DECFC000BCCC83 /* SCCompanyProfileViewModel.swift */,
+			);
+			path = Company;
+			sourceTree = "<group>";
+		};
+		0DEEA43C22DEA75100BCCC83 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				0D59A0F822DBF1D800BF62EF /* SCStockListItem.swift */,
+				0D59A0FA22DBF26300BF62EF /* SCStockMostActive.swift */,
+				0D59A0FC22DBF2B400BF62EF /* SCStockMostGainer.swift */,
+				0D59A0FE22DBF2CE00BF62EF /* SCStockMostLoser.swift */,
+				0D59A10F22DC3B4B00BF62EF /* SCStockForexList.swift */,
+				0D59A11122DC3B6B00BF62EF /* SCStockForexListItem.swift */,
+				0D59A11322DC3BFC00BF62EF /* SCStockCryptocurrenciesList.swift */,
+				0D59A11522DC3C2B00BF62EF /* SCStockCryptocurrenciesListItem.swift */,
+				0D59A11722DC3CDB00BF62EF /* SCStockSectorPerformance.swift */,
+				0D59A11922DC3CFE00BF62EF /* SCStockSectorPerformanceItem.swift */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		0DEEA43D22DEA75E00BCCC83 /* Company */ = {
+			isa = PBXGroup;
+			children = (
+				0DEEA43F22DEA79200BCCC83 /* SCCompanyProfile.swift */,
+				0DEEA44322DEAAF000BCCC83 /* SCCompanyFinancialRatios.swift */,
+				0DEEA44522DEAD5F00BCCC83 /* SCCompanyEnterpriseValue.swift */,
+				0DEEA44722DEAE6F00BCCC83 /* SCCompanyKeyMetrics.swift */,
+				0DEEA44922DEAF2F00BCCC83 /* SCCompanyRatings.swift */,
+			);
+			path = Company;
+			sourceTree = "<group>";
+		};
 		0DFC175A22DD9CEC00F3F95F /* Company View */ = {
 			isa = PBXGroup;
 			children = (
+				0DEEA42D22DE913F00BCCC83 /* About */,
 				0DFC175B22DD9D1900F3F95F /* SCCompanyViewController.swift */,
 				0DFC175E22DD9D3B00F3F95F /* SCCompanyViewController.xib */,
 			);
@@ -657,9 +739,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D59A12422DC424400BF62EF /* SCStockForexCell.xib in Resources */,
+				0DEEA43922DE9ACD00BCCC83 /* SCCompanyAboutHeaderView.xib in Resources */,
 				0D69633C22DABBA600244D8A /* main.json in Resources */,
 				0DFC175F22DD9D3B00F3F95F /* SCCompanyViewController.xib in Resources */,
 				0D6962BF22DAB8FF00244D8A /* LaunchScreen.storyboard in Resources */,
+				0DEEA43722DE966C00BCCC83 /* SCCompanyAboutController.storyboard in Resources */,
 				0D59A10822DC00D200BF62EF /* SCStockDisplayView.xib in Resources */,
 				0D6962BC22DAB8FF00244D8A /* Assets.xcassets in Resources */,
 				0D59A12C22DC42B800BF62EF /* SCStockSectorPerformanceCell.xib in Resources */,
@@ -756,19 +840,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D69634C22DABFD800244D8A /* SCNewsViewController.swift in Sources */,
+				0DEEA44422DEAAF000BCCC83 /* SCCompanyFinancialRatios.swift in Sources */,
 				0D69632F22DABA1700244D8A /* UIViewController+extension.swift in Sources */,
 				0D59A12622DC427700BF62EF /* SCStockCryptocurrenciesCell.swift in Sources */,
 				0D69632922DABA1700244D8A /* UILabel+extension.swift in Sources */,
+				0DEEA44822DEAE6F00BCCC83 /* SCCompanyKeyMetrics.swift in Sources */,
+				0DEEA45122DED03A00BCCC83 /* SCCompanyEnterpriseValueViewModel.swift in Sources */,
+				0DEEA44622DEAD5F00BCCC83 /* SCCompanyEnterpriseValue.swift in Sources */,
 				0D59A11422DC3BFC00BF62EF /* SCStockCryptocurrenciesList.swift in Sources */,
 				0D59A10E22DC0C5900BF62EF /* SCStockInfoViewModel.swift in Sources */,
 				0D69631F22DABA1700244D8A /* UIScreen+UISCreen_extenshion.m in Sources */,
 				0D69634622DABF9400244D8A /* SCStockViewController.swift in Sources */,
 				0D59A0FD22DBF2B400BF62EF /* SCStockMostGainer.swift in Sources */,
 				0D69631A22DABA1700244D8A /* UINavigationController+WJObjcSugar.m in Sources */,
+				0DEEA44A22DEAF2F00BCCC83 /* SCCompanyRatings.swift in Sources */,
 				0D59A10422DBF5CE00BF62EF /* SCNetworkManager+extension.swift in Sources */,
 				0D69632B22DABA1700244D8A /* UIImage+extension.swift in Sources */,
 				0D69632C22DABA1700244D8A /* UINavigationController+extension.swift in Sources */,
 				0D69632A22DABA1700244D8A /* UIView+extension.swift in Sources */,
+				0DEEA44022DEA79200BCCC83 /* SCCompanyProfile.swift in Sources */,
 				0DFC175922DD50F500F3F95F /* SCStockSectorViewModel.swift in Sources */,
 				0D69633122DABA1700244D8A /* UITableViewCell+extension.swift in Sources */,
 				0D59A10222DBF37100BF62EF /* SCStockListViewModel.swift in Sources */,
@@ -794,6 +884,7 @@
 				0DFC175C22DD9D1900F3F95F /* SCCompanyViewController.swift in Sources */,
 				0D69631D22DABA1700244D8A /* UIImageView+SCAddition.m in Sources */,
 				0D69633D22DABBA600244D8A /* SCNavigationViewController.swift in Sources */,
+				0DEEA43322DE92C200BCCC83 /* SCCompanyAboutHeaderView.swift in Sources */,
 				0D69632522DABA1700244D8A /* NSAttributedString+extension.swift in Sources */,
 				0D59A12E22DC528A00BF62EF /* Double+extension.swift in Sources */,
 				0D69633022DABA1700244D8A /* String+extension.swift in Sources */,
@@ -809,9 +900,14 @@
 				0D69632E22DABA1700244D8A /* UITabBarController+extension.swift in Sources */,
 				0D69633222DABA1700244D8A /* WKWebView+extension.swift in Sources */,
 				0D69632222DABA1700244D8A /* UIColor+SCAddition.m in Sources */,
+				0DEEA44C22DECFC000BCCC83 /* SCCompanyProfileViewModel.swift in Sources */,
 				0D59A11E22DC403600BF62EF /* SCStockCryptocurrenciesViewModel.swift in Sources */,
+				0DEEA42F22DE915900BCCC83 /* SCCompanyAboutController.swift in Sources */,
 				0D59A11022DC3B4B00BF62EF /* SCStockForexList.swift in Sources */,
+				0DEEA45322DED03A00BCCC83 /* SCCompanyFinancialRatiosViewModel.swift in Sources */,
 				0D59A11C22DC3FFB00BF62EF /* SCStockForexViewModel.swift in Sources */,
+				0DEEA45422DED03A00BCCC83 /* SCCompanyRatingsViewModel.swift in Sources */,
+				0DEEA45222DED03A00BCCC83 /* SCCompanyKeyMetricsViewModel.swift in Sources */,
 				0D69631922DABA1700244D8A /* UIButton+SCAddition.m in Sources */,
 				0D59A0F922DBF1D800BF62EF /* SCStockListItem.swift in Sources */,
 				0D59A0FB22DBF26300BF62EF /* SCStockMostActive.swift in Sources */,

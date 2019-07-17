@@ -8,12 +8,20 @@
 
 import UIKit
 import DLSlideView
+import SVProgressHUD
 
 class SCCompanyViewController: UIViewController {
+    var listViewModel: SCStockListViewModel?{
+        didSet{
+            loadData()
+        }
+    }
+    
     private let tabInfoArray = [["image":"about", "title": "About"],
                             ["image":"income", "title": "I/S"],
                             ["image":"balanceSheet", "title": "B/S"],
                             ["image":"cashFlow", "title": "CFS"]]
+    private let aboutController = UIStoryboard(name: "SCCompanyAboutController", bundle: nil).instantiateViewController(withIdentifier: "company_about") as! SCCompanyAboutController
     
     @IBOutlet weak var tabedSlideView: DLTabedSlideView!
     override func viewDidLoad() {
@@ -33,8 +41,11 @@ class SCCompanyViewController: UIViewController {
             }
             tabs.append(tabItem)
         }
-        
         return tabs
+    }
+    
+    deinit {
+        listViewModel?.clearCompanyContent()
     }
 }
 
@@ -54,6 +65,17 @@ private extension SCCompanyViewController{
         tabedSlideView.buildTabbar()
         tabedSlideView.selectedIndex = 0
     }
+    
+    func loadData(){
+        guard let ticker = title else{
+            return
+        }
+        SVProgressHUD.show()
+        listViewModel?.loadCompanyInfo(ticker: ticker, completion: { [weak self](isSuccess) in
+            self?.aboutController.listViewModel = self?.listViewModel
+            SVProgressHUD.dismiss()
+        })
+    }
 }
 extension SCCompanyViewController: DLTabedSlideViewDelegate{
     func numberOfTabs(in sender: DLTabedSlideView!) -> Int {
@@ -61,10 +83,21 @@ extension SCCompanyViewController: DLTabedSlideViewDelegate{
     }
     
     func dlTabedSlideView(_ sender: DLTabedSlideView!, controllerAt index: Int) -> UIViewController? {
+        switch index {
+        case 0:
+            return aboutController
+        case 1, 2, 3:
+            return UIViewController()
+        default:
+            break
+        }
         return UIViewController()
     }
     func dlTabedSlideView(_ sender: DLTabedSlideView!, didSelectedAt index: Int) {
-        
+        switch index {
+        default:
+            break
+        }
     }
 }
 
