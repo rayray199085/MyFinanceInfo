@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SCCompanyStatementDataView" customModule="MyFinanceInfo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gwq-oP-MEn">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <action selector="clickDataMaskButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="5wv-c3-5Gv"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8MC-Cn-VS6">
+                    <rect key="frame" x="5" y="296.5" width="404" height="303"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="8MC-Cn-VS6" secondAttribute="height" multiplier="4:3" id="s3k-cA-Y9o"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="8MC-Cn-VS6" secondAttribute="trailing" constant="5" id="EXT-Zd-Ooz"/>
+                <constraint firstItem="Gwq-oP-MEn" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="KaD-hi-OQN"/>
+                <constraint firstAttribute="bottom" secondItem="Gwq-oP-MEn" secondAttribute="bottom" id="afJ-jX-mJj"/>
+                <constraint firstItem="Gwq-oP-MEn" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="bQe-wN-BPB"/>
+                <constraint firstItem="8MC-Cn-VS6" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="cxI-a9-Q13"/>
+                <constraint firstItem="8MC-Cn-VS6" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="fdY-3L-8Zn"/>
+                <constraint firstItem="8MC-Cn-VS6" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="5" id="nQr-CH-p4h"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Gwq-oP-MEn" secondAttribute="trailing" id="y02-xs-Gbk"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="chartView" destination="8MC-Cn-VS6" id="4Mv-hD-I9E"/>
+            </connections>
+        </view>
+    </objects>
+</document>

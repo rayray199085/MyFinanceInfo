@@ -44,3 +44,18 @@ extension SCNetworkManager{
         }
     }
 }
+extension SCNetworkManager{
+    func getIncomeStatement(ticker: String, completion: @escaping (_ data: Data?, _ isSuccess: Bool)->()){
+        request(urlString: InfoCommon.baseUrl + "/financials/income-statement/\(ticker)", method: HTTPMethod.get, params: nil) { (data, _, isSuccess, _, _) in
+            completion(data, isSuccess)
+        }
+    }
+}
+
+extension SCNetworkManager{
+    func getTopHeadlines(completion:@escaping (_ data: Data?, _ isSuccess: Bool)->()){
+        request(urlString: InfoCommon.newsUrl, method: HTTPMethod.get, params: nil) { (data, _, isSuccess, _, _) in
+            completion(data, isSuccess)
+        }
+    }
+}

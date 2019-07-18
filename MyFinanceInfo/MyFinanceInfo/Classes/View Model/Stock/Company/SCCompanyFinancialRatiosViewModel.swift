@@ -9,7 +9,6 @@
 import Foundation
 
 struct SCCompanyFinancialRatiosViewModel {
-    let item: SCCompanyFinancialRatioItem
     var operatingMargin: String?
     var roa: String?
     var roe: String?
@@ -17,9 +16,7 @@ struct SCCompanyFinancialRatiosViewModel {
     var pb: String?
     var pe: String?
     
-    init(item: SCCompanyFinancialRatioItem) {
-        self.item = item
-        
+    init(item: SCCompanyFinancialRatioItem) {        
         operatingMargin = getRatiosValueInPercentage(stringValue: item.profitabilityIndicatorRatios?.pretaxProfitMargin)
         roa = getRatiosValueInPercentage(stringValue: item.profitabilityIndicatorRatios?.returnOnAssets)
         roe = getRatiosValueInPercentage(stringValue: item.profitabilityIndicatorRatios?.returnOnEquity)

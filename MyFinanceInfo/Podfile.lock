@@ -2,6 +2,9 @@ PODS:
   - Alamofire (4.8.2)
   - AlamofireNetworkActivityIndicator (2.4.0):
     - Alamofire (~> 4.8)
+  - Charts (3.3.0):
+    - Charts/Core (= 3.3.0)
+  - Charts/Core (3.3.0)
   - DLSlideView (0.8.3)
   - FBRetainCycleDetector (0.1.4)
   - MLeaksFinder (1.0.0):
@@ -17,6 +20,7 @@ PODS:
 DEPENDENCIES:
   - Alamofire
   - AlamofireNetworkActivityIndicator
+  - Charts
   - DLSlideView (from `https://github.com/agdsdl/DLSlideView.git`)
   - MLeaksFinder
   - pop
@@ -29,6 +33,7 @@ SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
     - AlamofireNetworkActivityIndicator
+    - Charts
     - FBRetainCycleDetector
     - MLeaksFinder
     - pop
@@ -49,6 +54,7 @@ CHECKOUT OPTIONS:
 SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
   AlamofireNetworkActivityIndicator: 9acc3de3ca6645bf0efed462396b0df13dd3e7b8
+  Charts: e0dd4cd8f257bccf98407b58183ddca8e8d5b578
   DLSlideView: b517599cf60b1de71cb1b1e0bb356a893669c005
   FBRetainCycleDetector: 46f8179bbb1c587deee3ea838a1a3ee02acf5015
   MLeaksFinder: 8c435bd2f6d070af18cff082b503b21adc130fc0
@@ -58,6 +64,6 @@ SPEC CHECKSUMS:
   SDWebImage: 6764b5fa0f73c203728052955dbefa2bf1f33282
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
-PODFILE CHECKSUM: 51d36d7b02f677f1d0c9bc02540267b3610ca137
+PODFILE CHECKSUM: 9349b75df7f31656910ad762597da4ca75dde548
 
 COCOAPODS: 1.6.1

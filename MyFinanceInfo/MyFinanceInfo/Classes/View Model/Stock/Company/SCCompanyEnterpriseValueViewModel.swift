@@ -9,12 +9,10 @@
 import Foundation
 
 struct SCCompanyEnterpriseValueViewModel {
-    let item: SCCompanyEnterpriseValueItem
     var year: String?
     var sharesValue: String?
     
     init(item: SCCompanyEnterpriseValueItem) {
-        self.item = item
         let date = item.date ?? ""
         year = "Shares(\((date as NSString).substring(with: NSRange(location: 0, length: 4))))"
         

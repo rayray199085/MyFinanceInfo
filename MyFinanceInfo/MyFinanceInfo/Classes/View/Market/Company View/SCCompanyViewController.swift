@@ -22,6 +22,7 @@ class SCCompanyViewController: UIViewController {
                             ["image":"balanceSheet", "title": "B/S"],
                             ["image":"cashFlow", "title": "CFS"]]
     private let aboutController = UIStoryboard(name: "SCCompanyAboutController", bundle: nil).instantiateViewController(withIdentifier: "company_about") as! SCCompanyAboutController
+    private let incomeController = SCCompanyIncomeController()
     
     @IBOutlet weak var tabedSlideView: DLTabedSlideView!
     override func viewDidLoad() {
@@ -86,7 +87,9 @@ extension SCCompanyViewController: DLTabedSlideViewDelegate{
         switch index {
         case 0:
             return aboutController
-        case 1, 2, 3:
+        case 1:
+            return incomeController
+        case 2, 3:
             return UIViewController()
         default:
             break
@@ -95,6 +98,8 @@ extension SCCompanyViewController: DLTabedSlideViewDelegate{
     }
     func dlTabedSlideView(_ sender: DLTabedSlideView!, didSelectedAt index: Int) {
         switch index {
+        case 1:
+            incomeController.listViewModel = listViewModel
         default:
             break
         }

@@ -17,4 +17,5 @@ struct InfoCommon{
     static let decreasingPriceColor = UIColor(displayP3Red: 189.0 / 250, green: 63.0 / 250, blue: 68.0 / 250, alpha: 1.0)
     
     static let baseUrl = "https://financialmodelingprep.com/api/v3"
+    static let newsUrl = "https://newsapi.org/v2/top-headlines?country=us&apiKey=c53eb778bee44e6f9e2b0349d1bf9e24"
 }

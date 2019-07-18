@@ -24,6 +24,9 @@ class SCStockListViewModel {
     var keyMetricsViewModel: SCCompanyKeyMetricsViewModel?
     var ratingsViewModel: SCCompanyRatingsViewModel?
     
+    var incomeStatementItems: [SCCompanyStatementItem]?
+    var date: [String]?
+    
     func loadStockData(index: Int, completion:@escaping (_ isSuccess: Bool)->()){
         SCNetworkManager.shared.getStockData(suffix: suffixArray[index]) { (data, isSuccess) in
             guard let data = data else{
@@ -152,5 +155,25 @@ extension SCStockListViewModel{
         enterpriseValueViewModel = nil
         keyMetricsViewModel = nil
         ratingsViewModel = nil
+        
+        incomeStatementItems = nil
+    }
+}
+extension SCStockListViewModel{
+    func loadIncomeStatement(ticker: String, completion:@escaping (_ isSuccess: Bool)->()){
+        SCNetworkManager.shared.getIncomeStatement(ticker: ticker) { (data, isSuccess) in
+            guard let data = data,
+                  let incomeStatement = try? JSONDecoder().decode(SCCompanyIncomeStatement.self, from: data) else{
+                completion(false)
+                return
+            }
+            var viewModels = SCCompanyISViewModels()
+            for item in incomeStatement.financials?.reversed() ?? []{
+                viewModels.setValues(item: item)
+            }
+            self.incomeStatementItems = viewModels.getStatementItems()
+            self.date = viewModels.date
+            completion(true)
+        }
     }
 }
