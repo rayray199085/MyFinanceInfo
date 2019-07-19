@@ -44,7 +44,7 @@ extension SCCompanyDataDisplayView: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath)
         cell.textLabel?.text = statementItems?[indexPath.row].name
-        cell.accessoryType = .detailButton
+        cell.accessoryType = .disclosureIndicator
         return cell
     }
     

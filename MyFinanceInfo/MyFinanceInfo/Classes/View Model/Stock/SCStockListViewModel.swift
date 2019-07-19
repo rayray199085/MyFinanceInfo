@@ -25,7 +25,13 @@ class SCStockListViewModel {
     var ratingsViewModel: SCCompanyRatingsViewModel?
     
     var incomeStatementItems: [SCCompanyStatementItem]?
-    var date: [String]?
+    var balanceSheetStatementItems: [SCCompanyStatementItem]?
+    var cashFlowtStatementItems: [SCCompanyStatementItem]?
+    var isDate: [String]?
+    var bsDate: [String]?
+    var cfDate: [String]?
+    
+    var historyViewModels: [SCCompanyHistoricalPriceViewModel]?
     
     func loadStockData(index: Int, completion:@escaping (_ isSuccess: Bool)->()){
         SCNetworkManager.shared.getStockData(suffix: suffixArray[index]) { (data, isSuccess) in
@@ -157,6 +163,10 @@ extension SCStockListViewModel{
         ratingsViewModel = nil
         
         incomeStatementItems = nil
+        balanceSheetStatementItems = nil
+        cashFlowtStatementItems = nil
+        
+        historyViewModels = nil
     }
 }
 extension SCStockListViewModel{
@@ -172,7 +182,60 @@ extension SCStockListViewModel{
                 viewModels.setValues(item: item)
             }
             self.incomeStatementItems = viewModels.getStatementItems()
-            self.date = viewModels.date
+            self.isDate = viewModels.date
+            completion(true)
+        }
+    }
+}
+extension SCStockListViewModel{
+    func loadBalanceSheetStatement(ticker: String, completion:@escaping (_ isSuccess: Bool)->()){
+        SCNetworkManager.shared.getBalanceSheetStatement(ticker: ticker) { (data, isSuccess) in
+            guard let data = data,
+                let balanceSheetStatement = try? JSONDecoder().decode(SCCompanyBalanceSheetStatement.self, from: data) else{
+                    completion(false)
+                    return
+            }
+            var viewModels = SCCompanyBSViewModels()
+            for item in balanceSheetStatement.financials?.reversed() ?? []{
+                viewModels.setValues(item: item)
+            }
+            self.balanceSheetStatementItems = viewModels.getStatementItems()
+            self.bsDate = viewModels.date
+            completion(true)
+        }
+    }
+}
+extension SCStockListViewModel{
+    func loadCashFlowStatement(ticker: String, completion:@escaping (_ isSuccess: Bool)->()){
+        SCNetworkManager.shared.getCashFlowStatement(ticker: ticker) { (data, isSuccess) in
+            guard let data = data,
+                let cashFlowStatement = try? JSONDecoder().decode(SCCompanyCashFlowStatement.self, from: data) else{
+                    completion(false)
+                    return
+            }
+            var viewModels = SCCompanyCFViewModels()
+            for item in cashFlowStatement.financials?.reversed() ?? []{
+                viewModels.setValues(item: item)
+            }
+            self.cashFlowtStatementItems = viewModels.getStatementItems()
+            self.cfDate = viewModels.date
+            completion(true)
+        }
+    }
+}
+extension SCStockListViewModel{
+    func loadFullHistoricalPrice(ticker: String, completion:@escaping (_ isSuccess: Bool)->()){
+        SCNetworkManager.shared.getFullHistoricalPrice(ticker: ticker) { (data, isSuccess) in
+            guard let data = data,
+                  let historicalPriceItems = try? JSONDecoder().decode(SCCompanyHistoricalPrice.self, from: data) else{
+                completion(false)
+                return
+            }
+            var viewModels = [SCCompanyHistoricalPriceViewModel]()
+            for item in historicalPriceItems.historical ?? []{
+                viewModels.append(SCCompanyHistoricalPriceViewModel(item: item))
+            }
+            self.historyViewModels = viewModels
             completion(true)
         }
     }

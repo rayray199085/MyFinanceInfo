@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="50" id="AQd-QS-2vP" customClass="SCIndexesTableViewCell" customModule="MyFinanceInfo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="AQd-QS-2vP" id="ppH-Wv-DBO">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="49.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NYSE American Composite Index" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VZ8-T6-pQH">
+                        <rect key="frame" x="3" y="3" width="240.5" height="18"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BUA-IU-ZHf">
+                        <rect key="frame" x="3" y="24" width="40" height="18"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mHS-Ml-SKn">
+                        <rect key="frame" x="187" y="24" width="38" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8PO-UU-S7f">
+                        <rect key="frame" x="373" y="24" width="38" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="mHS-Ml-SKn" firstAttribute="leading" secondItem="ppH-Wv-DBO" secondAttribute="centerX" constant="-20" id="1Ud-F5-b64"/>
+                    <constraint firstItem="BUA-IU-ZHf" firstAttribute="leading" secondItem="VZ8-T6-pQH" secondAttribute="leading" id="RSx-z8-mg6"/>
+                    <constraint firstItem="VZ8-T6-pQH" firstAttribute="leading" secondItem="ppH-Wv-DBO" secondAttribute="leading" constant="3" id="TT7-w3-FEq"/>
+                    <constraint firstItem="BUA-IU-ZHf" firstAttribute="top" secondItem="VZ8-T6-pQH" secondAttribute="bottom" constant="3" id="add-KG-2xM"/>
+                    <constraint firstItem="VZ8-T6-pQH" firstAttribute="top" secondItem="ppH-Wv-DBO" secondAttribute="top" constant="3" id="isM-VZ-elB"/>
+                    <constraint firstAttribute="trailing" secondItem="8PO-UU-S7f" secondAttribute="trailing" constant="3" id="rGk-VV-NGT"/>
+                    <constraint firstItem="8PO-UU-S7f" firstAttribute="centerY" secondItem="BUA-IU-ZHf" secondAttribute="centerY" id="vTW-gW-yyu"/>
+                    <constraint firstItem="mHS-Ml-SKn" firstAttribute="centerY" secondItem="BUA-IU-ZHf" secondAttribute="centerY" id="zWq-EF-ktE"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="changeLabel" destination="mHS-Ml-SKn" id="akZ-Yf-b1D"/>
+                <outlet property="changePercentageLabel" destination="8PO-UU-S7f" id="3y4-dH-14n"/>
+                <outlet property="indexNameLabel" destination="VZ8-T6-pQH" id="65b-Sk-CjW"/>
+                <outlet property="priceLabel" destination="BUA-IU-ZHf" id="jgh-86-MHu"/>
+            </connections>
+            <point key="canvasLocation" x="118.84057971014494" y="81.696428571428569"/>
+        </tableViewCell>
+    </objects>
+</document>

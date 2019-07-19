@@ -11,6 +11,7 @@ import DLSlideView
 import SVProgressHUD
 
 class SCCompanyViewController: UIViewController {
+    private lazy var historicalPriceView = SCCompanyHistoricalPriceView.historicalPriceView()
     var listViewModel: SCStockListViewModel?{
         didSet{
             loadData()
@@ -23,6 +24,8 @@ class SCCompanyViewController: UIViewController {
                             ["image":"cashFlow", "title": "CFS"]]
     private let aboutController = UIStoryboard(name: "SCCompanyAboutController", bundle: nil).instantiateViewController(withIdentifier: "company_about") as! SCCompanyAboutController
     private let incomeController = SCCompanyIncomeController()
+    private let balanceController = SCCompanyBalanceController()
+    private let cashFlowController = SCCompanyCashFlowController()
     
     @IBOutlet weak var tabedSlideView: DLTabedSlideView!
     override func viewDidLoad() {
@@ -48,11 +51,40 @@ class SCCompanyViewController: UIViewController {
     deinit {
         listViewModel?.clearCompanyContent()
     }
+    @objc private func clickHistoryButton(){
+        guard let title = title else{
+            return
+        }
+        navigationItem.rightBarButtonItem?.isEnabled = false
+        if listViewModel?.historyViewModels != nil{
+            showHistoricalPriceView()
+            return
+        }
+        SVProgressHUD.show()
+        listViewModel?.loadFullHistoricalPrice(ticker: title, completion: { [weak self](isSuccess) in
+            SVProgressHUD.dismiss()
+            self?.historicalPriceView.historyViewModels = self?.listViewModel?.historyViewModels
+            self?.showHistoricalPriceView()
+        })
+        
+    }
+    func showHistoricalPriceView(){
+        historicalPriceView.show { [weak self] in
+            self?.navigationItem.rightBarButtonItem?.isEnabled = true
+        }
+    }
 }
 
 private extension SCCompanyViewController{
     func setupUI(){
         setupTabedSlideView()
+        setupNavigationItem()
+    }
+    
+    func setupNavigationItem(){
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "History", fontSize: 16, target: self, action: #selector(clickHistoryButton), isBack: false)
+        navigationController?.view.addSubview(historicalPriceView)
+        historicalPriceView.frame.origin.x = UIScreen.screenWidth()
     }
     func setupTabedSlideView(){
         tabedSlideView.baseViewController = self
@@ -89,8 +121,10 @@ extension SCCompanyViewController: DLTabedSlideViewDelegate{
             return aboutController
         case 1:
             return incomeController
-        case 2, 3:
-            return UIViewController()
+        case 2:
+            return balanceController
+        case 3:
+            return cashFlowController
         default:
             break
         }
@@ -100,6 +134,10 @@ extension SCCompanyViewController: DLTabedSlideViewDelegate{
         switch index {
         case 1:
             incomeController.listViewModel = listViewModel
+        case 2:
+            balanceController.listViewModel = listViewModel
+        case 3:
+            cashFlowController.listViewModel = listViewModel
         default:
             break
         }

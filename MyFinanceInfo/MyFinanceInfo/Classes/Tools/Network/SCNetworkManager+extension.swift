@@ -53,8 +53,41 @@ extension SCNetworkManager{
 }
 
 extension SCNetworkManager{
+    func getBalanceSheetStatement(ticker: String, completion: @escaping (_ data: Data?, _ isSuccess: Bool)->()){
+        request(urlString: InfoCommon.baseUrl + "/financials/balance-sheet-statement/\(ticker)", method: HTTPMethod.get, params: nil) { (data, _, isSuccess, _, _) in
+            completion(data, isSuccess)
+        }
+    }
+}
+
+extension SCNetworkManager{
+    func getCashFlowStatement(ticker: String, completion: @escaping (_ data: Data?, _ isSuccess: Bool)->()){
+        request(urlString: InfoCommon.baseUrl + "/financials/cash-flow-statement/\(ticker)", method: HTTPMethod.get, params: nil) { (data, _, isSuccess, _, _) in
+            completion(data, isSuccess)
+        }
+    }
+}
+extension SCNetworkManager{
+    func getFullHistoricalPrice(ticker: String, completion: @escaping (_ data: Data?, _ isSuccess: Bool)->()){
+        let urlString = InfoCommon.baseUrl + "/historical-price-full/\(ticker)"
+        let params = ["serietype": "candle"]
+        request(urlString: urlString, method: HTTPMethod.get, params: params) { (data, _, isSuccess, _, _) in
+            completion(data, isSuccess)
+        }
+    }
+}
+
+extension SCNetworkManager{
     func getTopHeadlines(completion:@escaping (_ data: Data?, _ isSuccess: Bool)->()){
         request(urlString: InfoCommon.newsUrl, method: HTTPMethod.get, params: nil) { (data, _, isSuccess, _, _) in
+            completion(data, isSuccess)
+        }
+    }
+}
+
+extension SCNetworkManager{
+    func getMajorIndexes(completion:@escaping (_ data: Data?, _ isSuccess: Bool)->()){
+        request(urlString: InfoCommon.baseUrl + "/majors-indexes", method: HTTPMethod.get, params: nil) { (data, _, isSuccess, _, _) in
             completion(data, isSuccess)
         }
     }

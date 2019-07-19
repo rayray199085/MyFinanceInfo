@@ -13,6 +13,7 @@ class SCCompanyIncomeController: SCCompanyStatementController {
     
     override func loadData() {
         if listViewModel?.incomeStatementItems != nil{
+            dataDisplayView.tableView.scroll(to: UITableView.scrollsTo.top, animated: true)
             return 
         }
         guard let ticker = parent?.title else{
@@ -21,7 +22,7 @@ class SCCompanyIncomeController: SCCompanyStatementController {
         SVProgressHUD.show()
         listViewModel?.loadIncomeStatement(ticker: ticker, completion: { [weak self](isSuccess) in
             self?.dataDisplayView.statementItems = self?.listViewModel?.incomeStatementItems
-            self?.dataView.date = self?.listViewModel?.date
+            self?.dataView.date = self?.listViewModel?.isDate
             SVProgressHUD.dismiss()
         })
     }
