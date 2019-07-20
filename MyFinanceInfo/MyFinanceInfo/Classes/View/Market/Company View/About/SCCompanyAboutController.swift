@@ -10,7 +10,7 @@ import UIKit
 
 class SCCompanyAboutController: UITableViewController {
 
-    var listViewModel: SCStockListViewModel?{
+    var listViewModel: SCBaseListViewModel?{
         didSet{
             let headerView = SCCompanyAboutHeaderView.headerView(height: listViewModel?.profileViewModel?.viewHeight ?? 0)
             headerView.listViewModel = listViewModel

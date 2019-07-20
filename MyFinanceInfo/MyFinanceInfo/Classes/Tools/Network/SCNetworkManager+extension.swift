@@ -92,3 +92,10 @@ extension SCNetworkManager{
         }
     }
 }
+extension SCNetworkManager{
+    func getCompanyList(completion:@escaping (_ data: Data?, _ isSuccess: Bool)->()){
+        request(urlString: InfoCommon.baseUrl + "/company/stock/list", method: HTTPMethod.get, params: nil) { (data, _, isSuccess, _, _) in
+            completion(data, isSuccess)
+        }
+    }
+}

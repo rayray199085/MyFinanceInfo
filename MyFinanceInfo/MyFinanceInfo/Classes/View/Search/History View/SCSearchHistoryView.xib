@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SCSearchHistoryView" customModule="MyFinanceInfo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zE4-9I-ObN">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <action selector="clickSearchHistoryMaskButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="cM1-eH-Inb"/>
+                    </connections>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="U60-PI-x0l">
+                    <rect key="frame" x="0.0" y="44" width="331" height="818"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="zE4-9I-ObN" secondAttribute="trailing" id="1By-Mn-fSk"/>
+                <constraint firstItem="zE4-9I-ObN" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="KVo-kA-2gK"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="U60-PI-x0l" secondAttribute="bottom" id="bXR-y2-ORN"/>
+                <constraint firstItem="zE4-9I-ObN" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="cOc-xv-B6d"/>
+                <constraint firstItem="U60-PI-x0l" firstAttribute="width" secondItem="zE4-9I-ObN" secondAttribute="width" multiplier="0.8" id="oVm-VP-9cr"/>
+                <constraint firstItem="U60-PI-x0l" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="qrW-5x-Wjo"/>
+                <constraint firstAttribute="bottom" secondItem="zE4-9I-ObN" secondAttribute="bottom" id="vA7-LV-qoI"/>
+                <constraint firstItem="U60-PI-x0l" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="yW1-Ow-Ldg"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="tableView" destination="U60-PI-x0l" id="itN-ML-AoP"/>
+            </connections>
+        </view>
+    </objects>
+</document>

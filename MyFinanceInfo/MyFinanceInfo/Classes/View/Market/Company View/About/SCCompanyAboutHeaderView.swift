@@ -9,7 +9,7 @@
 import UIKit
 
 class SCCompanyAboutHeaderView: UIView {
-    var listViewModel: SCStockListViewModel?{
+    var listViewModel: SCBaseListViewModel?{
         didSet{
             setupUI()
         }

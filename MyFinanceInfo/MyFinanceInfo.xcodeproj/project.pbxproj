@@ -21,6 +21,13 @@
 		0D173BEA22E0409C00F0ED2F /* SCCompanyStatementDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D173BE922E0409C00F0ED2F /* SCCompanyStatementDataView.swift */; };
 		0D173BEC22E040BA00F0ED2F /* SCCompanyStatementDataView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D173BEB22E040BA00F0ED2F /* SCCompanyStatementDataView.xib */; };
 		0D173BEE22E0886700F0ED2F /* BalloonMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D173BED22E0886700F0ED2F /* BalloonMarker.swift */; };
+		0D21312A22E2B7B100099DD1 /* SCSearchCompanyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D21312822E2B7B100099DD1 /* SCSearchCompanyCell.swift */; };
+		0D21312B22E2B7B100099DD1 /* SCSearchCompanyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D21312922E2B7B100099DD1 /* SCSearchCompanyCell.xib */; };
+		0D21312F22E2D50700099DD1 /* SCSearchHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D21312E22E2D50700099DD1 /* SCSearchHistoryView.swift */; };
+		0D21313122E2D55500099DD1 /* SCSearchHistoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D21313022E2D55500099DD1 /* SCSearchHistoryView.xib */; };
+		0D21313422E2E0CF00099DD1 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0D21313222E2E0CF00099DD1 /* Model.xcdatamodeld */; };
+		0D21313822E2E18700099DD1 /* AppDelegate+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D21313622E2E18600099DD1 /* AppDelegate+extension.swift */; };
+		0D21313922E2E18700099DD1 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D21313722E2E18600099DD1 /* CoreDataManager.swift */; };
 		0D59A0F922DBF1D800BF62EF /* SCStockListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D59A0F822DBF1D800BF62EF /* SCStockListItem.swift */; };
 		0D59A0FB22DBF26300BF62EF /* SCStockMostActive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D59A0FA22DBF26300BF62EF /* SCStockMostActive.swift */; };
 		0D59A0FD22DBF2B400BF62EF /* SCStockMostGainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D59A0FC22DBF2B400BF62EF /* SCStockMostGainer.swift */; };
@@ -111,6 +118,12 @@
 		0D825FE022E19E3F009BD1A4 /* SCIndexesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D825FDF22E19E3F009BD1A4 /* SCIndexesListViewModel.swift */; };
 		0D825FE322E19F4A009BD1A4 /* SCIndexesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D825FE222E19F4A009BD1A4 /* SCIndexesList.swift */; };
 		0D825FE522E1A16A009BD1A4 /* SCIndexesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D825FE422E1A16A009BD1A4 /* SCIndexesViewModel.swift */; };
+		0D8AB7D722E2A484005A0694 /* SCBaseListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8AB7D622E2A484005A0694 /* SCBaseListViewModel.swift */; };
+		0D8AB7DA22E2A722005A0694 /* SCSearchListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8AB7D922E2A722005A0694 /* SCSearchListViewModel.swift */; };
+		0D8AB7DD22E2A800005A0694 /* SCSearchCompanyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8AB7DC22E2A800005A0694 /* SCSearchCompanyList.swift */; };
+		0D8AB7DF22E2A9E2005A0694 /* SCSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8AB7DE22E2A9E2005A0694 /* SCSearchViewModel.swift */; };
+		0D8AB7E122E2AF62005A0694 /* SCSearchDisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8AB7E022E2AF62005A0694 /* SCSearchDisplayView.swift */; };
+		0D8AB7E322E2AF73005A0694 /* SCSearchDisplayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D8AB7E222E2AF73005A0694 /* SCSearchDisplayView.xib */; };
 		0DEEA42F22DE915900BCCC83 /* SCCompanyAboutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DEEA42E22DE915900BCCC83 /* SCCompanyAboutController.swift */; };
 		0DEEA43322DE92C200BCCC83 /* SCCompanyAboutHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DEEA43222DE92C200BCCC83 /* SCCompanyAboutHeaderView.swift */; };
 		0DEEA43722DE966C00BCCC83 /* SCCompanyAboutController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DEEA43622DE966C00BCCC83 /* SCCompanyAboutController.storyboard */; };
@@ -163,6 +176,13 @@
 		0D173BE922E0409C00F0ED2F /* SCCompanyStatementDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCCompanyStatementDataView.swift; sourceTree = "<group>"; };
 		0D173BEB22E040BA00F0ED2F /* SCCompanyStatementDataView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SCCompanyStatementDataView.xib; sourceTree = "<group>"; };
 		0D173BED22E0886700F0ED2F /* BalloonMarker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalloonMarker.swift; sourceTree = "<group>"; };
+		0D21312822E2B7B100099DD1 /* SCSearchCompanyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCSearchCompanyCell.swift; sourceTree = "<group>"; };
+		0D21312922E2B7B100099DD1 /* SCSearchCompanyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SCSearchCompanyCell.xib; sourceTree = "<group>"; };
+		0D21312E22E2D50700099DD1 /* SCSearchHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCSearchHistoryView.swift; sourceTree = "<group>"; };
+		0D21313022E2D55500099DD1 /* SCSearchHistoryView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SCSearchHistoryView.xib; sourceTree = "<group>"; };
+		0D21313322E2E0CF00099DD1 /* SearchHistory.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SearchHistory.xcdatamodel; sourceTree = "<group>"; };
+		0D21313622E2E18600099DD1 /* AppDelegate+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AppDelegate+extension.swift"; sourceTree = "<group>"; };
+		0D21313722E2E18600099DD1 /* CoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		0D59A0F822DBF1D800BF62EF /* SCStockListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCStockListItem.swift; sourceTree = "<group>"; };
 		0D59A0FA22DBF26300BF62EF /* SCStockMostActive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCStockMostActive.swift; sourceTree = "<group>"; };
 		0D59A0FC22DBF2B400BF62EF /* SCStockMostGainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCStockMostGainer.swift; sourceTree = "<group>"; };
@@ -272,6 +292,12 @@
 		0D825FDF22E19E3F009BD1A4 /* SCIndexesListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCIndexesListViewModel.swift; sourceTree = "<group>"; };
 		0D825FE222E19F4A009BD1A4 /* SCIndexesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCIndexesList.swift; sourceTree = "<group>"; };
 		0D825FE422E1A16A009BD1A4 /* SCIndexesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCIndexesViewModel.swift; sourceTree = "<group>"; };
+		0D8AB7D622E2A484005A0694 /* SCBaseListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCBaseListViewModel.swift; sourceTree = "<group>"; };
+		0D8AB7D922E2A722005A0694 /* SCSearchListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCSearchListViewModel.swift; sourceTree = "<group>"; };
+		0D8AB7DC22E2A800005A0694 /* SCSearchCompanyList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCSearchCompanyList.swift; sourceTree = "<group>"; };
+		0D8AB7DE22E2A9E2005A0694 /* SCSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCSearchViewModel.swift; sourceTree = "<group>"; };
+		0D8AB7E022E2AF62005A0694 /* SCSearchDisplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCSearchDisplayView.swift; sourceTree = "<group>"; };
+		0D8AB7E222E2AF73005A0694 /* SCSearchDisplayView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SCSearchDisplayView.xib; sourceTree = "<group>"; };
 		0DEEA42E22DE915900BCCC83 /* SCCompanyAboutController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCCompanyAboutController.swift; sourceTree = "<group>"; };
 		0DEEA43222DE92C200BCCC83 /* SCCompanyAboutHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCCompanyAboutHeaderView.swift; sourceTree = "<group>"; };
 		0DEEA43622DE966C00BCCC83 /* SCCompanyAboutController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SCCompanyAboutController.storyboard; sourceTree = "<group>"; };
@@ -391,6 +417,36 @@
 			path = "Income Statement";
 			sourceTree = "<group>";
 		};
+		0D21312C22E2D08D00099DD1 /* Display View */ = {
+			isa = PBXGroup;
+			children = (
+				0D8AB7E022E2AF62005A0694 /* SCSearchDisplayView.swift */,
+				0D8AB7E222E2AF73005A0694 /* SCSearchDisplayView.xib */,
+				0D21312822E2B7B100099DD1 /* SCSearchCompanyCell.swift */,
+				0D21312922E2B7B100099DD1 /* SCSearchCompanyCell.xib */,
+			);
+			path = "Display View";
+			sourceTree = "<group>";
+		};
+		0D21312D22E2D4E400099DD1 /* History View */ = {
+			isa = PBXGroup;
+			children = (
+				0D21312E22E2D50700099DD1 /* SCSearchHistoryView.swift */,
+				0D21313022E2D55500099DD1 /* SCSearchHistoryView.xib */,
+			);
+			path = "History View";
+			sourceTree = "<group>";
+		};
+		0D21313522E2E0D900099DD1 /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				0D21313622E2E18600099DD1 /* AppDelegate+extension.swift */,
+				0D21313722E2E18600099DD1 /* CoreDataManager.swift */,
+				0D21313222E2E0CF00099DD1 /* Model.xcdatamodeld */,
+			);
+			path = "Core Data";
+			sourceTree = "<group>";
+		};
 		0D59A0F722DBF18D00BF62EF /* Stock */ = {
 			isa = PBXGroup;
 			children = (
@@ -497,6 +553,7 @@
 		0D6962E522DAB98600244D8A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0D8AB7DB22E2A7DC005A0694 /* Search */,
 				0D825FE122E19F27009BD1A4 /* Indexes */,
 				0D173BCE22DFECA300F0ED2F /* News */,
 				0D59A0F722DBF18D00BF62EF /* Stock */,
@@ -520,6 +577,8 @@
 		0D6962E722DAB98600244D8A /* View Model */ = {
 			isa = PBXGroup;
 			children = (
+				0D8AB7D522E2A44D005A0694 /* Base */,
+				0D8AB7D822E2A700005A0694 /* Search */,
 				0D825FD622E19AD4009BD1A4 /* Indexes */,
 				0D173BCB22DFEB5A00F0ED2F /* News */,
 				0D59A10022DBF35900BF62EF /* Stock */,
@@ -644,6 +703,9 @@
 		0D69634322DABF6200244D8A /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				0D21313522E2E0D900099DD1 /* Core Data */,
+				0D21312D22E2D4E400099DD1 /* History View */,
+				0D21312C22E2D08D00099DD1 /* Display View */,
 				0D69634922DABFC800244D8A /* SCSearchViewController.swift */,
 			);
 			path = Search;
@@ -775,6 +837,31 @@
 				0D825FE222E19F4A009BD1A4 /* SCIndexesList.swift */,
 			);
 			path = Indexes;
+			sourceTree = "<group>";
+		};
+		0D8AB7D522E2A44D005A0694 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				0D8AB7D622E2A484005A0694 /* SCBaseListViewModel.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		0D8AB7D822E2A700005A0694 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				0D8AB7D922E2A722005A0694 /* SCSearchListViewModel.swift */,
+				0D8AB7DE22E2A9E2005A0694 /* SCSearchViewModel.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		0D8AB7DB22E2A7DC005A0694 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				0D8AB7DC22E2A800005A0694 /* SCSearchCompanyList.swift */,
+			);
+			path = Search;
 			sourceTree = "<group>";
 		};
 		0DEEA42D22DE913F00BCCC83 /* About */ = {
@@ -977,6 +1064,7 @@
 			files = (
 				0D59A12422DC424400BF62EF /* SCStockForexCell.xib in Resources */,
 				0D173BD822DFF0A300F0ED2F /* SCCompanyDataDisplayView.xib in Resources */,
+				0D8AB7E322E2AF73005A0694 /* SCSearchDisplayView.xib in Resources */,
 				0DEEA43922DE9ACD00BCCC83 /* SCCompanyAboutHeaderView.xib in Resources */,
 				0D69633C22DABBA600244D8A /* main.json in Resources */,
 				0DFC175F22DD9D3B00F3F95F /* SCCompanyViewController.xib in Resources */,
@@ -989,10 +1077,12 @@
 				0D59A12C22DC42B800BF62EF /* SCStockSectorPerformanceCell.xib in Resources */,
 				0D59A10A22DC013500BF62EF /* SCStockInfoCell.xib in Resources */,
 				0D173BCA22DFE9E300F0ED2F /* SCNewsDisplayView.xib in Resources */,
+				0D21313122E2D55500099DD1 /* SCSearchHistoryView.xib in Resources */,
 				0D825FCE22E17E12009BD1A4 /* SCCompanyHistoricalPriceView.xib in Resources */,
 				0D59A12822DC428B00BF62EF /* SCStockCryptocurrenciesCell.xib in Resources */,
 				0D173BEC22E040BA00F0ED2F /* SCCompanyStatementDataView.xib in Resources */,
 				0D69635422DAF65B00244D8A /* SCStockCategoryView.xib in Resources */,
+				0D21312B22E2B7B100099DD1 /* SCSearchCompanyCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1093,6 +1183,7 @@
 				0D825FCA22E15560009BD1A4 /* SCCompanyCFViewModels.swift in Sources */,
 				0DEEA44822DEAE6F00BCCC83 /* SCCompanyKeyMetrics.swift in Sources */,
 				0DEEA45122DED03A00BCCC83 /* SCCompanyEnterpriseValueViewModel.swift in Sources */,
+				0D21313422E2E0CF00099DD1 /* Model.xcdatamodeld in Sources */,
 				0D825FD822E19B07009BD1A4 /* SCIndexesDisplayView.swift in Sources */,
 				0DEEA44622DEAD5F00BCCC83 /* SCCompanyEnterpriseValue.swift in Sources */,
 				0D59A11422DC3BFC00BF62EF /* SCStockCryptocurrenciesList.swift in Sources */,
@@ -1113,33 +1204,41 @@
 				0DFC175922DD50F500F3F95F /* SCStockSectorViewModel.swift in Sources */,
 				0D69633122DABA1700244D8A /* UITableViewCell+extension.swift in Sources */,
 				0D59A10222DBF37100BF62EF /* SCStockListViewModel.swift in Sources */,
+				0D21313822E2E18700099DD1 /* AppDelegate+extension.swift in Sources */,
 				0D825FBC22E1380B009BD1A4 /* SCCompanyBalanceSheetStatement.swift in Sources */,
 				0D825FDC22E19C68009BD1A4 /* SCIndexesTableViewCell.swift in Sources */,
 				0D69631722DABA1700244D8A /* SCNetworkManager.swift in Sources */,
 				0D59A0FF22DBF2CE00BF62EF /* SCStockMostLoser.swift in Sources */,
 				0D69635222DAF5E900244D8A /* SCStockCategoryView.swift in Sources */,
 				0D825FD422E185E2009BD1A4 /* SCCompanyHistoricalPriceViewModel.swift in Sources */,
+				0D8AB7DD22E2A800005A0694 /* SCSearchCompanyList.swift in Sources */,
 				0D69634A22DABFC800244D8A /* SCSearchViewController.swift in Sources */,
 				0D825FE022E19E3F009BD1A4 /* SCIndexesListViewModel.swift in Sources */,
 				0D59A10C22DC017500BF62EF /* SCStockInfoCell.swift in Sources */,
 				0D6962B522DAB8FE00244D8A /* AppDelegate.swift in Sources */,
 				0D69634E22DABFE900244D8A /* SCMoreViewController.swift in Sources */,
+				0D21312F22E2D50700099DD1 /* SCSearchHistoryView.swift in Sources */,
 				0D69631822DABA1700244D8A /* MXCornerRadius.m in Sources */,
 				0D173BE622E02C5900F0ED2F /* SCCompanyStatementItem.swift in Sources */,
 				0D825FC222E14DE9009BD1A4 /* SCCompanyCashFlowController.swift in Sources */,
 				0D825FE522E1A16A009BD1A4 /* SCIndexesViewModel.swift in Sources */,
 				0D59A11222DC3B6B00BF62EF /* SCStockForexListItem.swift in Sources */,
+				0D8AB7DF22E2A9E2005A0694 /* SCSearchViewModel.swift in Sources */,
 				0D69633B22DABBA600244D8A /* SCMainViewController.swift in Sources */,
 				0D825FB922E136D4009BD1A4 /* SCCompanyBalanceController.swift in Sources */,
 				0D69632722DABA1700244D8A /* UIWindow+extension.swift in Sources */,
 				0D69631E22DABA1700244D8A /* NSString+SCAddition.m in Sources */,
 				0D69633422DABA1700244D8A /* UIBarButtonItem+extension.swift in Sources */,
 				0D69633F22DABBEF00244D8A /* InfoCommon.swift in Sources */,
+				0D8AB7D722E2A484005A0694 /* SCBaseListViewModel.swift in Sources */,
 				0D173BD622DFF09400F0ED2F /* SCCompanyDataDisplayView.swift in Sources */,
 				0D69632122DABA1700244D8A /* UILabel+SCAddition.m in Sources */,
 				0D825FE322E19F4A009BD1A4 /* SCIndexesList.swift in Sources */,
+				0D21312A22E2B7B100099DD1 /* SCSearchCompanyCell.swift in Sources */,
 				0D173BD322DFF03B00F0ED2F /* SCCompanyIncomeController.swift in Sources */,
 				0D69633322DABA1700244D8A /* UIPageControl+extension.swift in Sources */,
+				0D21313922E2E18700099DD1 /* CoreDataManager.swift in Sources */,
+				0D8AB7E122E2AF62005A0694 /* SCSearchDisplayView.swift in Sources */,
 				0D69632622DABA1700244D8A /* UIFont+extension.swift in Sources */,
 				0D59A11A22DC3CFE00BF62EF /* SCStockSectorPerformanceItem.swift in Sources */,
 				0D69632022DABA1700244D8A /* CABasicAnimation+SCAddition.m in Sources */,
@@ -1160,6 +1259,7 @@
 				0D69632822DABA1700244D8A /* Date+extension.swift in Sources */,
 				0D59A12A22DC42A700BF62EF /* SCStockSectorPerformanceCell.swift in Sources */,
 				0D173BEE22E0886700F0ED2F /* BalloonMarker.swift in Sources */,
+				0D8AB7DA22E2A722005A0694 /* SCSearchListViewModel.swift in Sources */,
 				0D173BCD22DFEB7100F0ED2F /* SCNewsListViewModel.swift in Sources */,
 				0D69634822DABFB100244D8A /* SCIndexesViewController.swift in Sources */,
 				0D69632E22DABA1700244D8A /* UITabBarController+extension.swift in Sources */,
@@ -1503,6 +1603,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		0D21313222E2E0CF00099DD1 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				0D21313322E2E0CF00099DD1 /* SearchHistory.xcdatamodel */,
+			);
+			currentVersion = 0D21313322E2E0CF00099DD1 /* SearchHistory.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 0D6962A922DAB8FE00244D8A /* Project object */;
 }

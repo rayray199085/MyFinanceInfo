@@ -12,7 +12,7 @@ class SCCompanyStatementController: UIViewController {
     let dataDisplayView = SCCompanyDataDisplayView.dataDisplayView()
     let dataView = SCCompanyStatementDataView.dataView()
     
-    var listViewModel: SCStockListViewModel?{
+    var listViewModel: SCBaseListViewModel?{
         didSet{
             loadData()
         }

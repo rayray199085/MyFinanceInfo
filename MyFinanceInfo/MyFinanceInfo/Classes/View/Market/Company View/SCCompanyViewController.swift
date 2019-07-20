@@ -12,7 +12,7 @@ import SVProgressHUD
 
 class SCCompanyViewController: UIViewController {
     private lazy var historicalPriceView = SCCompanyHistoricalPriceView.historicalPriceView()
-    var listViewModel: SCStockListViewModel?{
+    var listViewModel: SCBaseListViewModel?{
         didSet{
             loadData()
         }
