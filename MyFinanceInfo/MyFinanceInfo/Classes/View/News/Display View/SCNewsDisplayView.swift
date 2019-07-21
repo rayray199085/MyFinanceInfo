@@ -9,7 +9,7 @@
 import UIKit
 
 class SCNewsDisplayView: UIView {
-    @IBOutlet weak var tableView: UITableView!
+    
     
     class func displayView()->SCNewsDisplayView{
         let nib = UINib(nibName: "SCNewsDisplayView", bundle: nil)
@@ -17,5 +17,14 @@ class SCNewsDisplayView: UIView {
         v.frame = UIScreen.main.bounds
         return v
     }
-    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        setupUI()
+    }
+   
 }
+private extension SCNewsDisplayView{
+    func setupUI(){
+    }
+}
+

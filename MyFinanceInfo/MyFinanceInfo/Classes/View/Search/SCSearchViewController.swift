@@ -22,7 +22,6 @@ class SCSearchViewController: UIViewController {
     @objc private func clickHistoryRecordButton(){
         navigationItem.leftBarButtonItem?.isEnabled = false
         if searchHistoryView.frame.origin.x == -UIScreen.screenWidth(){
-            searchHistoryView.showSearchHistoryRecord()
             searchHistoryView.showSearchHistoryView { [weak self] in
                 self?.navigationItem.leftBarButtonItem?.isEnabled = true
             }
@@ -32,21 +31,6 @@ class SCSearchViewController: UIViewController {
                 self?.selectHistoryRecord()
             }
         }
-    }
-    private func selectHistoryRecord(){
-        viewCompanyDetails(ticker: searchHistoryView.selectedTicker)
-        searchHistoryView.selectedTicker = nil
-    }
-    private func viewCompanyDetails(ticker: String?){
-        guard let ticker = ticker else{
-            return
-        }
-        saveSearchHistory(ticker: ticker)
-        
-        let vc = SCCompanyViewController()
-        vc.title = ticker
-        vc.listViewModel = listViewModel
-        navigationController?.pushViewController(vc, animated: true)
     }
 }
 private extension SCSearchViewController{
@@ -69,6 +53,23 @@ private extension SCSearchViewController{
             }
             SVProgressHUD.dismiss()
         }
+    }
+    // display company details after history record view dismiss
+   func selectHistoryRecord(){
+        viewCompanyDetails(ticker: searchHistoryView.selectedTicker)
+        searchHistoryView.selectedTicker = nil
+    }
+    // show company details
+   func viewCompanyDetails(ticker: String?){
+        guard let ticker = ticker else{
+            return
+        }
+        saveSearchHistory(ticker: ticker)
+        
+        let vc = SCCompanyViewController()
+        vc.title = ticker
+        vc.listViewModel = listViewModel
+        navigationController?.pushViewController(vc, animated: true)
     }
 }
 extension SCSearchViewController: SCSearchDisplayViewDelegate{

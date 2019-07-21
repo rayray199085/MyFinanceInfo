@@ -10,18 +10,19 @@ import WebKit
 import SVProgressHUD
 
 class SCNewsViewController: UIViewController {
-    private lazy var displayView = SCNewsDisplayView.displayView()
+   
+//    private lazy var displayView = SCNewsDisplayView.displayView()
     private let listViewModel = SCNewsListViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
-        loadData()
+//        loadData()
     }
 }
 private extension SCNewsViewController{
     func setupUI(){
-        view.addSubview(displayView)
+        
     }
     func loadData(){
         SVProgressHUD.show()
@@ -30,3 +31,4 @@ private extension SCNewsViewController{
         }
     }
 }
+
