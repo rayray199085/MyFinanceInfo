@@ -78,14 +78,6 @@ extension SCNetworkManager{
 }
 
 extension SCNetworkManager{
-    func getTopHeadlines(completion:@escaping (_ data: Data?, _ isSuccess: Bool)->()){
-        request(urlString: InfoCommon.newsUrl, method: HTTPMethod.get, params: nil) { (data, _, isSuccess, _, _) in
-            completion(data, isSuccess)
-        }
-    }
-}
-
-extension SCNetworkManager{
     func getMajorIndexes(completion:@escaping (_ data: Data?, _ isSuccess: Bool)->()){
         request(urlString: InfoCommon.baseUrl + "/majors-indexes", method: HTTPMethod.get, params: nil) { (data, _, isSuccess, _, _) in
             completion(data, isSuccess)
@@ -95,6 +87,15 @@ extension SCNetworkManager{
 extension SCNetworkManager{
     func getCompanyList(completion:@escaping (_ data: Data?, _ isSuccess: Bool)->()){
         request(urlString: InfoCommon.baseUrl + "/company/stock/list", method: HTTPMethod.get, params: nil) { (data, _, isSuccess, _, _) in
+            completion(data, isSuccess)
+        }
+    }
+}
+
+extension SCNetworkManager{
+    func getTopHeadlines(segmentName: String, completion:@escaping (_ data: Data?, _ isSuccess: Bool)->()){
+        let params = ["category": segmentName]
+        request(urlString: InfoCommon.newsUrl, method: HTTPMethod.get, params: params) { (data, _, isSuccess, _, _) in
             completion(data, isSuccess)
         }
     }

@@ -9,6 +9,7 @@
 import Foundation
 
 struct SCNewsTopHeadlines: Decodable{
+    let totalResults: Int?
     let articles: [SCNewsArticle]?
 }
 

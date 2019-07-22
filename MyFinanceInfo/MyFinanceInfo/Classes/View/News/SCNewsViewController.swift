@@ -6,29 +6,9 @@
 //  Copyright © 2019 Stephen Cao. All rights reserved.
 //
 
-import WebKit
+import UIKit
 import SVProgressHUD
 
 class SCNewsViewController: UIViewController {
-   
-//    private lazy var displayView = SCNewsDisplayView.displayView()
-    private let listViewModel = SCNewsListViewModel()
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        setupUI()
-//        loadData()
-    }
+    private let titles = ["business", "entertainment", "general", "health", "science", "sports", "technology"]
 }
-private extension SCNewsViewController{
-    func setupUI(){
-        
-    }
-    func loadData(){
-        SVProgressHUD.show()
-        listViewModel.loadTopHeadlines { (isSuccess) in
-            SVProgressHUD.dismiss()
-        }
-    }
-}
-

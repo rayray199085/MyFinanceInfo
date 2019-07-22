@@ -15,8 +15,23 @@
         <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SCNewsDisplayView" customModule="MyFinanceInfo" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="LY6-93-b4Q">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="LY6-93-b4Q" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="0UZ-Pv-ZOw"/>
+                <constraint firstItem="LY6-93-b4Q" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="CGN-NM-1F5"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="LY6-93-b4Q" secondAttribute="trailing" id="qxc-PM-AkD"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="LY6-93-b4Q" secondAttribute="bottom" id="zjE-yr-5bK"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="tableView" destination="LY6-93-b4Q" id="lHl-VQ-0Hl"/>
+            </connections>
         </view>
     </objects>
 </document>

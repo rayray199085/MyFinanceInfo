@@ -9,14 +9,24 @@
 import Foundation
 
 class SCNewsListViewModel{
-    func loadTopHeadlines(completion:@escaping (_ isSuccess: Bool)->()){
-        SCNetworkManager.shared.getTopHeadlines { (data, isSuccess) in
+    var currentSegmentName: String?
+    var viewModels: [SCNewsArticleViewModel]?
+    var totalArticles: Int = 0
+    
+    func loadTopHeadlines(segmentName: String, completion:@escaping (_ isSuccess: Bool)->()){
+        currentSegmentName = segmentName
+        SCNetworkManager.shared.getTopHeadlines(segmentName: segmentName) { (data, isSuccess) in
             guard let data = data,
-                  let topHeadlines = try? JSONDecoder().decode(SCNewsTopHeadlines.self, from: data) else{
+            let topHeadlines = try? JSONDecoder().decode(SCNewsTopHeadlines.self, from: data) else{
                 completion(false)
-                return 
+                return
             }
-            print(topHeadlines)
+            self.totalArticles = topHeadlines.totalResults ?? 0
+            var viewModels = [SCNewsArticleViewModel]()
+            for article in topHeadlines.articles ?? []{
+                viewModels.append(SCNewsArticleViewModel(article: article))
+            }
+            self.viewModels = viewModels
             completion(true)
         }
     }
