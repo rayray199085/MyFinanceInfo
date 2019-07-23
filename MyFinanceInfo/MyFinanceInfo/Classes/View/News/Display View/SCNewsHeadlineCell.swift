@@ -13,8 +13,10 @@ class SCNewsHeadlineCell: UITableViewCell {
         didSet{
             newsTitleLabel.text = viewModel?.title
             newsImageView.setImage(urlString: viewModel?.imageUrlString, placeholderImage: UIImage(named: "empty_picture"))
+            publishAtLabel.text = viewModel?.publishAt
         }
     }
     @IBOutlet weak var newsImageView: UIImageView!
     @IBOutlet weak var newsTitleLabel: UILabel!
+    @IBOutlet weak var publishAtLabel: UILabel!
 }

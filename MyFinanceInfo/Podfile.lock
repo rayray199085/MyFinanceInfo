@@ -2,11 +2,13 @@ PODS:
   - Alamofire (4.8.2)
   - AlamofireNetworkActivityIndicator (2.4.0):
     - Alamofire (~> 4.8)
+  - BTNavigationDropdownMenu (0.5)
   - Charts (3.3.0):
     - Charts/Core (= 3.3.0)
   - Charts/Core (3.3.0)
   - DLSlideView (0.8.3)
   - FBRetainCycleDetector (0.1.4)
+  - GSKStretchyHeaderView (1.0.4)
   - MLeaksFinder (1.0.0):
     - FBRetainCycleDetector
   - pop (1.0.12)
@@ -20,8 +22,10 @@ PODS:
 DEPENDENCIES:
   - Alamofire
   - AlamofireNetworkActivityIndicator
+  - BTNavigationDropdownMenu
   - Charts
   - DLSlideView (from `https://github.com/agdsdl/DLSlideView.git`)
+  - GSKStretchyHeaderView
   - MLeaksFinder
   - pop
   - SCRRefreshControl
@@ -33,8 +37,10 @@ SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
     - AlamofireNetworkActivityIndicator
+    - BTNavigationDropdownMenu
     - Charts
     - FBRetainCycleDetector
+    - GSKStretchyHeaderView
     - MLeaksFinder
     - pop
     - SCRRefreshControl
@@ -54,9 +60,11 @@ CHECKOUT OPTIONS:
 SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
   AlamofireNetworkActivityIndicator: 9acc3de3ca6645bf0efed462396b0df13dd3e7b8
+  BTNavigationDropdownMenu: ba3a26fdb6a56c4721c31df8a0875106c259663a
   Charts: e0dd4cd8f257bccf98407b58183ddca8e8d5b578
   DLSlideView: b517599cf60b1de71cb1b1e0bb356a893669c005
   FBRetainCycleDetector: 46f8179bbb1c587deee3ea838a1a3ee02acf5015
+  GSKStretchyHeaderView: 9743704c12bdc9cf7c7947bad3af8bf24f7061e3
   MLeaksFinder: 8c435bd2f6d070af18cff082b503b21adc130fc0
   pop: d582054913807fd11fd50bfe6a539d91c7e1a55a
   SCRRefreshControl: 889e57f1cf14000f4810f572e502d39b95926cd1
@@ -64,6 +72,6 @@ SPEC CHECKSUMS:
   SDWebImage: 6764b5fa0f73c203728052955dbefa2bf1f33282
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
-PODFILE CHECKSUM: 9349b75df7f31656910ad762597da4ca75dde548
+PODFILE CHECKSUM: 4f4f855a5cbc70212163f2439d21b5436707bd5e
 
 COCOAPODS: 1.6.1

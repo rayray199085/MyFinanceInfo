@@ -16,4 +16,6 @@ pod 'MLeaksFinder'
 pod 'DLSlideView', :git => 'https://github.com/agdsdl/DLSlideView.git'
 pod "SCRRefreshControl"
 pod 'Charts'
+pod 'BTNavigationDropdownMenu'
+pod "GSKStretchyHeaderView"
 end

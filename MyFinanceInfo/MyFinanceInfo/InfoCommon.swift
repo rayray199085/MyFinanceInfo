@@ -9,6 +9,12 @@
 import Foundation
 
 struct InfoCommon{
+    static let dateFormatter: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.locale = Locale(identifier: "en_US")
+        formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss'Z'"
+        return formatter
+    }()
     static let tinColor = UIColor(displayP3Red: 79.0 / 250, green: 159.0 / 250, blue: 79.0 / 250, alpha: 1.0)
     static let barColor = UIColor(displayP3Red: 192.0 / 250, green: 192.0 / 250, blue: 192.0 / 250, alpha: 1.0)
     static let tabbarNormalColor = UIColor(displayP3Red: 128.0 / 250, green: 128.0 / 250, blue: 128.0 / 250, alpha: 1.0)

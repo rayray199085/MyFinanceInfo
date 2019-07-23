@@ -93,8 +93,8 @@ extension SCNetworkManager{
 }
 
 extension SCNetworkManager{
-    func getTopHeadlines(segmentName: String, completion:@escaping (_ data: Data?, _ isSuccess: Bool)->()){
-        let params = ["category": segmentName]
+    func getTopHeadlines(pageIndex: Int, segmentName: String, completion:@escaping (_ data: Data?, _ isSuccess: Bool)->()){
+        let params = ["category": segmentName,"page": "\(pageIndex)"]
         request(urlString: InfoCommon.newsUrl, method: HTTPMethod.get, params: params) { (data, _, isSuccess, _, _) in
             completion(data, isSuccess)
         }

@@ -20,7 +20,7 @@ private let sectorPerformanceReuseIdentifier = "stock_sector_performance_cell"
 class SCStockDisplayView: UIView {
     weak var delegate: SCStockDisplayViewDelegate?
     var listViewModel: SCStockListViewModel?
-    lazy var refreshControl = SCRRefreshControl(style: .simple)
+    private lazy var refreshControl = SCRRefreshControl(style: .simple)
     
     class func displayView()->SCStockDisplayView{
         let nib = UINib(nibName: "SCStockDisplayView", bundle: nil)

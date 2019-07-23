@@ -13,9 +13,9 @@ class SCNewsListViewModel{
     var viewModels: [SCNewsArticleViewModel]?
     var totalArticles: Int = 0
     
-    func loadTopHeadlines(segmentName: String, completion:@escaping (_ isSuccess: Bool)->()){
+    func loadTopHeadlines(pageIndex: Int = 1, segmentName: String, completion:@escaping (_ isSuccess: Bool)->()){
         currentSegmentName = segmentName
-        SCNetworkManager.shared.getTopHeadlines(segmentName: segmentName) { (data, isSuccess) in
+        SCNetworkManager.shared.getTopHeadlines(pageIndex: pageIndex, segmentName: segmentName) { (data, isSuccess) in
             guard let data = data,
             let topHeadlines = try? JSONDecoder().decode(SCNewsTopHeadlines.self, from: data) else{
                 completion(false)
@@ -26,7 +26,11 @@ class SCNewsListViewModel{
             for article in topHeadlines.articles ?? []{
                 viewModels.append(SCNewsArticleViewModel(article: article))
             }
-            self.viewModels = viewModels
+            if self.viewModels == nil{
+                self.viewModels = viewModels
+            }else{
+                self.viewModels! += viewModels
+            }
             completion(true)
         }
     }

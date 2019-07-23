@@ -30,6 +30,9 @@ extension UITableView {
             }
         }
     }
+    func scroll2Top(){
+        scrollToRow(at: IndexPath(row: 0, section: 0), at: .top, animated: true)
+    }
     
     func scroll(to: scrollsTo, animated: Bool) {
         DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(300)) {
