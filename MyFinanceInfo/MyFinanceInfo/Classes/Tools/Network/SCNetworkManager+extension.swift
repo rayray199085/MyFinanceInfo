@@ -94,7 +94,8 @@ extension SCNetworkManager{
 
 extension SCNetworkManager{
     func getTopHeadlines(pageIndex: Int, segmentName: String, completion:@escaping (_ data: Data?, _ isSuccess: Bool)->()){
-        let params = ["category": segmentName,"page": "\(pageIndex)"]
+        let countryCode = (UserDefaults.standard.object(forKey: InfoCommon.regionKey) as? String)  ?? "us"
+        let params = ["category": segmentName,"page": "\(pageIndex)", "country": countryCode]
         request(urlString: InfoCommon.newsUrl, method: HTTPMethod.get, params: params) { (data, _, isSuccess, _, _) in
             completion(data, isSuccess)
         }

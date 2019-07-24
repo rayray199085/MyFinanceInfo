@@ -26,7 +26,7 @@ class SCNewsContentController: UIViewController {
         stretchyHeader.minimumContentHeight = 0
         stretchyHeader.maximumContentHeight = imageHeight
         stretchyHeader.contentShrinks = true
-        stretchyHeader.contentExpands = false
+        stretchyHeader.contentExpands = true
         
         tableView.addSubview(stretchyHeader)
         

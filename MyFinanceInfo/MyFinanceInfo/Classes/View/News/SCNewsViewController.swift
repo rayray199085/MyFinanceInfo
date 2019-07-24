@@ -19,6 +19,15 @@ class SCNewsViewController: UIViewController {
         super.viewDidLoad()
         setupUI()
         setupMenuView()
+        NotificationCenter.default.addObserver(self, selector: #selector(handleCountryCodeUpdate), name: NSNotification.Name(InfoCommon.SCNewsCountryCodeHasChanged), object: nil)
+    }
+    
+    @objc private func handleCountryCodeUpdate(){
+        listViewModel.currentSegmentName = nil
+    }
+    deinit {
+        NotificationCenter.default.removeObserver(self
+            , name: NSNotification.Name(InfoCommon.SCNewsCountryCodeHasChanged), object: nil)
     }
 }
 private extension SCNewsViewController{
@@ -51,7 +60,11 @@ private extension SCNewsViewController{
         SVProgressHUD.show()
         listViewModel.loadTopHeadlines(segmentName: segmentName) {[weak self] (isSuccess) in
             self?.displayView.tableView.reloadData()
-            self?.displayView.tableView.scroll2Top()
+            if (self?.listViewModel.viewModels?.count ?? 0) > 0{
+                self?.displayView.tableView.scroll2Top()
+            }else{
+                SVProgressHUD.showInfo(withStatus: "If you're seeing this it means something happened that we weren't expecting. Please try again.")
+            }
             if let completion = completion{
                 completion()
             }

@@ -98,9 +98,15 @@
 		0D69634822DABFB100244D8A /* SCIndexesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D69634722DABFB100244D8A /* SCIndexesViewController.swift */; };
 		0D69634A22DABFC800244D8A /* SCSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D69634922DABFC800244D8A /* SCSearchViewController.swift */; };
 		0D69634C22DABFD800244D8A /* SCNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D69634B22DABFD800244D8A /* SCNewsViewController.swift */; };
-		0D69634E22DABFE900244D8A /* SCMoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D69634D22DABFE900244D8A /* SCMoreViewController.swift */; };
 		0D69635222DAF5E900244D8A /* SCStockCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D69635122DAF5E900244D8A /* SCStockCategoryView.swift */; };
 		0D69635422DAF65B00244D8A /* SCStockCategoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D69635322DAF65B00244D8A /* SCStockCategoryView.xib */; };
+		0D69B64722E7DE8A00990F60 /* SCMoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D69B64422E7DE8900990F60 /* SCMoreTableViewCell.swift */; };
+		0D69B64822E7DE8A00990F60 /* SCMoreTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D69B64522E7DE8900990F60 /* SCMoreTableViewCell.xib */; };
+		0D69B64922E7DE8A00990F60 /* SCMoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D69B64622E7DE8900990F60 /* SCMoreViewController.swift */; };
+		0D69B64B22E7E9A500990F60 /* SCMoreRegionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D69B64A22E7E9A500990F60 /* SCMoreRegionController.swift */; };
+		0D69B64D22E7F47900990F60 /* SCMoreRegionController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D69B64C22E7F47900990F60 /* SCMoreRegionController.xib */; };
+		0D69B64F22E7F53900990F60 /* SCMoreRegionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D69B64E22E7F53900990F60 /* SCMoreRegionCell.swift */; };
+		0D69B65122E7F55000990F60 /* SCMoreRegionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D69B65022E7F55000990F60 /* SCMoreRegionCell.xib */; };
 		0D73020E22E53FD200D2549B /* SCNewsHeadlineCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D73020D22E53FD200D2549B /* SCNewsHeadlineCell.swift */; };
 		0D73021022E53FE000D2549B /* SCNewsHeadlineCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D73020F22E53FE000D2549B /* SCNewsHeadlineCell.xib */; };
 		0D73021222E543A200D2549B /* SCNewsArticleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D73021122E543A200D2549B /* SCNewsArticleViewModel.swift */; };
@@ -282,9 +288,15 @@
 		0D69634722DABFB100244D8A /* SCIndexesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCIndexesViewController.swift; sourceTree = "<group>"; };
 		0D69634922DABFC800244D8A /* SCSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCSearchViewController.swift; sourceTree = "<group>"; };
 		0D69634B22DABFD800244D8A /* SCNewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCNewsViewController.swift; sourceTree = "<group>"; };
-		0D69634D22DABFE900244D8A /* SCMoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCMoreViewController.swift; sourceTree = "<group>"; };
 		0D69635122DAF5E900244D8A /* SCStockCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCStockCategoryView.swift; sourceTree = "<group>"; };
 		0D69635322DAF65B00244D8A /* SCStockCategoryView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SCStockCategoryView.xib; sourceTree = "<group>"; };
+		0D69B64422E7DE8900990F60 /* SCMoreTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCMoreTableViewCell.swift; sourceTree = "<group>"; };
+		0D69B64522E7DE8900990F60 /* SCMoreTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SCMoreTableViewCell.xib; sourceTree = "<group>"; };
+		0D69B64622E7DE8900990F60 /* SCMoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCMoreViewController.swift; sourceTree = "<group>"; };
+		0D69B64A22E7E9A500990F60 /* SCMoreRegionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCMoreRegionController.swift; sourceTree = "<group>"; };
+		0D69B64C22E7F47900990F60 /* SCMoreRegionController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SCMoreRegionController.xib; sourceTree = "<group>"; };
+		0D69B64E22E7F53900990F60 /* SCMoreRegionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCMoreRegionCell.swift; sourceTree = "<group>"; };
+		0D69B65022E7F55000990F60 /* SCMoreRegionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SCMoreRegionCell.xib; sourceTree = "<group>"; };
 		0D73020D22E53FD200D2549B /* SCNewsHeadlineCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCNewsHeadlineCell.swift; sourceTree = "<group>"; };
 		0D73020F22E53FE000D2549B /* SCNewsHeadlineCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SCNewsHeadlineCell.xib; sourceTree = "<group>"; };
 		0D73021122E543A200D2549B /* SCNewsArticleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCNewsArticleViewModel.swift; sourceTree = "<group>"; };
@@ -695,7 +707,13 @@
 		0D69634022DABF6200244D8A /* More */ = {
 			isa = PBXGroup;
 			children = (
-				0D69634D22DABFE900244D8A /* SCMoreViewController.swift */,
+				0D69B64622E7DE8900990F60 /* SCMoreViewController.swift */,
+				0D69B64422E7DE8900990F60 /* SCMoreTableViewCell.swift */,
+				0D69B64522E7DE8900990F60 /* SCMoreTableViewCell.xib */,
+				0D69B64A22E7E9A500990F60 /* SCMoreRegionController.swift */,
+				0D69B64C22E7F47900990F60 /* SCMoreRegionController.xib */,
+				0D69B64E22E7F53900990F60 /* SCMoreRegionCell.swift */,
+				0D69B65022E7F55000990F60 /* SCMoreRegionCell.xib */,
 			);
 			path = More;
 			sourceTree = "<group>";
@@ -1112,18 +1130,21 @@
 				0DEEA43722DE966C00BCCC83 /* SCCompanyAboutController.storyboard in Resources */,
 				0D825FDA22E19B6A009BD1A4 /* SCIndexesDisplayView.xib in Resources */,
 				0D59A10822DC00D200BF62EF /* SCStockDisplayView.xib in Resources */,
+				0D69B64D22E7F47900990F60 /* SCMoreRegionController.xib in Resources */,
 				0D6962BC22DAB8FF00244D8A /* Assets.xcassets in Resources */,
 				0D73021022E53FE000D2549B /* SCNewsHeadlineCell.xib in Resources */,
 				0D59A12C22DC42B800BF62EF /* SCStockSectorPerformanceCell.xib in Resources */,
 				0D59A10A22DC013500BF62EF /* SCStockInfoCell.xib in Resources */,
 				0D173BCA22DFE9E300F0ED2F /* SCNewsDisplayView.xib in Resources */,
 				0D9B797822E6C67B00832BFB /* SCNewsContentController.xib in Resources */,
+				0D69B64822E7DE8A00990F60 /* SCMoreTableViewCell.xib in Resources */,
 				0D9B797C22E6CE6200832BFB /* SCStretchyHeaderView.xib in Resources */,
 				0D21313122E2D55500099DD1 /* SCSearchHistoryView.xib in Resources */,
 				0D825FCE22E17E12009BD1A4 /* SCCompanyHistoricalPriceView.xib in Resources */,
 				0D59A12822DC428B00BF62EF /* SCStockCryptocurrenciesCell.xib in Resources */,
 				0D173BEC22E040BA00F0ED2F /* SCCompanyStatementDataView.xib in Resources */,
 				0D69635422DAF65B00244D8A /* SCStockCategoryView.xib in Resources */,
+				0D69B65122E7F55000990F60 /* SCMoreRegionCell.xib in Resources */,
 				0D21312B22E2B7B100099DD1 /* SCSearchCompanyCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1234,6 +1255,7 @@
 				0DEEA44622DEAD5F00BCCC83 /* SCCompanyEnterpriseValue.swift in Sources */,
 				0D59A11422DC3BFC00BF62EF /* SCStockCryptocurrenciesList.swift in Sources */,
 				0D59A10E22DC0C5900BF62EF /* SCStockInfoViewModel.swift in Sources */,
+				0D69B64722E7DE8A00990F60 /* SCMoreTableViewCell.swift in Sources */,
 				0D173BDA22DFF13E00F0ED2F /* SCCompanyStatementController.swift in Sources */,
 				0D69631F22DABA1700244D8A /* UIScreen+UISCreen_extenshion.m in Sources */,
 				0D69634622DABF9400244D8A /* SCStockViewController.swift in Sources */,
@@ -1265,7 +1287,6 @@
 				0D59A10C22DC017500BF62EF /* SCStockInfoCell.swift in Sources */,
 				0D6962B522DAB8FE00244D8A /* AppDelegate.swift in Sources */,
 				0D73021222E543A200D2549B /* SCNewsArticleViewModel.swift in Sources */,
-				0D69634E22DABFE900244D8A /* SCMoreViewController.swift in Sources */,
 				0D21312F22E2D50700099DD1 /* SCSearchHistoryView.swift in Sources */,
 				0D73020E22E53FD200D2549B /* SCNewsHeadlineCell.swift in Sources */,
 				0D69631822DABA1700244D8A /* MXCornerRadius.m in Sources */,
@@ -1293,6 +1314,7 @@
 				0D69632622DABA1700244D8A /* UIFont+extension.swift in Sources */,
 				0D59A11A22DC3CFE00BF62EF /* SCStockSectorPerformanceItem.swift in Sources */,
 				0D69632022DABA1700244D8A /* CABasicAnimation+SCAddition.m in Sources */,
+				0D69B64922E7DE8A00990F60 /* SCMoreViewController.swift in Sources */,
 				0DFC175C22DD9D1900F3F95F /* SCCompanyViewController.swift in Sources */,
 				0D69631D22DABA1700244D8A /* UIImageView+SCAddition.m in Sources */,
 				0D69633D22DABBA600244D8A /* SCNavigationViewController.swift in Sources */,
@@ -1313,6 +1335,7 @@
 				0D8AB7DA22E2A722005A0694 /* SCSearchListViewModel.swift in Sources */,
 				0D173BCD22DFEB7100F0ED2F /* SCNewsListViewModel.swift in Sources */,
 				0D69634822DABFB100244D8A /* SCIndexesViewController.swift in Sources */,
+				0D69B64F22E7F53900990F60 /* SCMoreRegionCell.swift in Sources */,
 				0D69632E22DABA1700244D8A /* UITabBarController+extension.swift in Sources */,
 				0D69633222DABA1700244D8A /* WKWebView+extension.swift in Sources */,
 				0D69632222DABA1700244D8A /* UIColor+SCAddition.m in Sources */,
@@ -1323,6 +1346,7 @@
 				0D59A11022DC3B4B00BF62EF /* SCStockForexList.swift in Sources */,
 				0D173BEA22E0409C00F0ED2F /* SCCompanyStatementDataView.swift in Sources */,
 				0DEEA45322DED03A00BCCC83 /* SCCompanyFinancialRatiosViewModel.swift in Sources */,
+				0D69B64B22E7E9A500990F60 /* SCMoreRegionController.swift in Sources */,
 				0D59A11C22DC3FFB00BF62EF /* SCStockForexViewModel.swift in Sources */,
 				0D825FD122E182A6009BD1A4 /* SCCompanyHistoricalPrice.swift in Sources */,
 				0DEEA45422DED03A00BCCC83 /* SCCompanyRatingsViewModel.swift in Sources */,
@@ -1505,6 +1529,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3CB5U428B8;
 				INFOPLIST_FILE = MyFinanceInfo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1524,6 +1549,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3CB5U428B8;
 				INFOPLIST_FILE = MyFinanceInfo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

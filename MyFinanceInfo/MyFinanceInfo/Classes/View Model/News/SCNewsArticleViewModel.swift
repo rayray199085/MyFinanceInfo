@@ -31,11 +31,10 @@ struct SCNewsArticleViewModel {
         
         rowHeight = calculateRowHight(title: title)
         imageUrlString = article.urlToImage
-        guard let publishTime = article.publishedAt,
-              let date = InfoCommon.dateFormatter.date(from: publishTime) else{
-            return
+        if let publishTime = article.publishedAt,
+           let date = InfoCommon.dateFormatter.date(from: publishTime){
+           publishAt = date.sinaDateStringDescription
         }
-        publishAt = date.sinaDateStringDescription
         detailsRowHeight = calculateDetailsCellRowHeight(article: article)
     }
     
@@ -44,17 +43,17 @@ struct SCNewsArticleViewModel {
         let innerMargin: CGFloat = 3
         let linkButtonHeight: CGFloat = 18
         let labelHeight: CGFloat = 16
-        var height = outterMargin
         let viewSize = CGSize(width: UIScreen.screenWidth() - 2 * outterMargin, height: CGFloat(MAXFLOAT))
-        height += article.title?.getTextHeight(size: viewSize, font: UIFont.boldSystemFont(ofSize: 17)) ?? 0
-        // publish at
+        var height = outterMargin
+        height += article.title?.heightWithConstrainedWidth(width: viewSize.width, font: UIFont.boldSystemFont(ofSize: 17)) ?? 0
+        // author + source + publish at
         height += 3 * (innerMargin + labelHeight)
         // description
-        height += innerMargin + (article.description?.getTextHeight(size: viewSize, font: UIFont.boldSystemFont(ofSize: 15)) ?? 0)
+        height += innerMargin + (article.description?.heightWithConstrainedWidth(width: viewSize.width, font: UIFont.boldSystemFont(ofSize: 17)) ?? 0)
         // content
-        height += innerMargin + ((article.content?.getTextHeight(size: viewSize, font: UIFont.systemFont(ofSize: 15)) ?? 0))
+        height += innerMargin + (article.content?.heightWithConstrainedWidth(width: viewSize.width, font: UIFont.boldSystemFont(ofSize: 17)) ?? 0)
         height += innerMargin + linkButtonHeight
-        height += outterMargin * 2
+        height += outterMargin
         return height
     }
     
@@ -68,7 +67,7 @@ struct SCNewsArticleViewModel {
         let imageWidth: CGFloat = 150
         var height = margin
         let viewSize = CGSize(width: UIScreen.screenWidth() - 3 * margin - imageWidth, height: CGFloat(MAXFLOAT))
-        height += title.getTextHeight(size: viewSize, font: UIFont.boldSystemFont(ofSize: 15))
+        height += title.heightWithConstrainedWidth(width: viewSize.width, font: UIFont.boldSystemFont(ofSize: 15))
         height += margin + timeLabelHeight
         height += margin
         return height > 90 ? height : 90
